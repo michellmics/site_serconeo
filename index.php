@@ -545,8 +545,8 @@
 							
 							<div class="row">
 								<div class="col-lg-5 col-md-4 col-12">
-                            		<div class="recaptcha-container">
-                                		<div class="g-recaptcha" data-sitekey="6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWY" data-callback="onSubmit"></div>
+                            		<div class="form-group">
+                                		<div class="g-recaptcha" data-sitekey="6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q" data-callback="onSubmit"></div>
                             		</div>
                         		</div>
 								<div class="col-lg-5 col-md-4 col-12">
@@ -571,8 +571,6 @@
 				</div>
 			</div>
 		</section>
-
-		
 		<!-- End Appointment -->
 		
 		<script>
