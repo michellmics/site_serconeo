@@ -54,6 +54,20 @@ body{
 	font-size:14px;
 	color:#888;
 }
+
+/* Remove o aviso padrão do reCAPTCHA */
+.grecaptcha-badge {
+    visibility: hidden; /* Remove a visibilidade padrão */
+}
+
+/* Estilo personalizado para reposicionar */
+.recaptcha-container {
+    position: fixed;
+    bottom: 10px; /* Distância do fundo */
+    left: 10px; /* Distância da esquerda (ou ajuste conforme necessário) */
+    z-index: 9999; /* Garante que o aviso fique acima de outros elementos */
+}
+
 html {
     scroll-behavior: smooth;
 }
