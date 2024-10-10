@@ -157,12 +157,12 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
-								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+							<div class="text">
+									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal, mantendo a documentação de sua empresa em dia</h1>
+									<p>Atendemos de micro empresas até empresas de grande porte, adotando todos os regimes de tributação necessários. </p>
 									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
-										<a href="#" class="btn primary">About Us</a>
+										<a href="#appointment" class="btn">Entre em contato</a>
+										<a href="#services" class="btn primary">Leia Mais</a>
 									</div>
 								</div>
 							</div>
@@ -175,12 +175,12 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
-								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+							<div class="text">
+									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal, mantendo a documentação de sua empresa em dia</h1>
+									<p>Atendemos de micro empresas até empresas de grande porte, adotando todos os regimes de tributação necessários. </p>
 									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
-										<a href="#" class="btn primary">Conatct Now</a>
+										<a href="#appointment" class="btn">Entre em contato</a>
+										<a href="#services" class="btn primary">Leia Mais</a>
 									</div>
 								</div>
 							</div>
