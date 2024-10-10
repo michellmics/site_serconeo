@@ -11,6 +11,7 @@
 		
 		<!-- reCaptcha -->
 		<script src="https://www.google.com/recaptcha/api.js?render=6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 		<!-- Title -->
         <title>Serconeo Contabilidade - Seu parceiro contábil para decisões inteligentes.</title>
@@ -490,7 +491,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-12">
-						<form class="form" action="#" id="form-contact">
+						<form class="form" action="#" id="demo-form" method="POST" onsubmit="event.preventDefault(); grecaptcha.execute();">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
@@ -545,9 +546,14 @@
 							
 							<div class="row">
 								<div class="col-lg-5 col-md-4 col-12">
+                            		<div class="form-group">
+                                		<div class="g-recaptcha" data-sitekey="SUA_CHAVE_DO_SITE" data-callback="onSubmit"></div>
+                            		</div>
+                        		</div>
+								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
 										<div class="button">
-											<button type="submit" class="btn" data-sitekey="6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q" data-callback='onSubmit' data-action='submit'>Enviar Mensagem</button>
+											<button type="submit" class="btn">Enviar Mensagem</button>
 										</div>
 									</div>
 								</div>
@@ -569,7 +575,7 @@
 		
 		<script>
   			function onSubmit(token) {
-    			document.getElementById("form-contact").submit();
+    			document.getElementById("demo-form").submit();
   			}
 		</script>
 		
