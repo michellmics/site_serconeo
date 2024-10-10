@@ -1,19 +1,3 @@
-<?php
-$token = $_POST['g-recaptcha-response'];
-$secretKey = "6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q"; // Substitua pela sua chave secreta
-$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$token}");
-$responseKeys = json_decode($response, true);
-
-var_dump($responseKeys); // Para depuração
-
-if (intval($responseKeys["success"]) !== 1) {
-    echo "Por favor, complete o captcha.";
-} else {
-    echo "Formulário enviado com sucesso.";
-}
-die();
-?>
-
 <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
@@ -27,7 +11,6 @@ die();
 		
 		<!-- reCaptcha -->
 		<script src="https://www.google.com/recaptcha/api.js?render=6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q"></script>
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 		<!-- Title -->
         <title>Serconeo Contabilidade - Seu parceiro contábil para decisões inteligentes.</title>
@@ -507,7 +490,7 @@ die();
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-12">
-						<form class="form" action="#" id="demo-form" method="POST" onsubmit="event.preventDefault(); grecaptcha.execute();">
+					<form id="demo-form" class="form" action="SEU_SCRIPT_PHP.php" method="POST">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
@@ -568,8 +551,9 @@ die();
                         		</div>
 								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
+										<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 										<div class="button">
-											<button type="submit" class="btn">Enviar Mensagem</button>
+										<button type="submit" class="btn" onclick="onSubmit(event)">Enviar Mensagem</button>
 										</div>
 									</div>
 								</div>
@@ -590,10 +574,16 @@ die();
 		<!-- End Appointment -->
 		
 		<script>
-  			function onSubmit(token) {
-    			document.getElementById("demo-form").submit();
-  			}
-		</script>
+        function onSubmit(e) {
+            e.preventDefault(); // Impede o envio do formulário
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q', {action: 'submit'}).then(function(token) {
+                    document.getElementById('g-recaptcha-response').value = token; // Armazena o token no campo oculto
+                    document.getElementById('demo-form').submit(); // Envia o formulário
+                });
+            });
+        }
+    </script>
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
@@ -654,19 +644,7 @@ die();
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
 
-		<script>
-		function submitForm() {
-    		grecaptcha.execute('6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q', {action: 'submit'}).then(function(token) {
-        	const form = document.querySelector('.form');
-        	const input = document.createElement('input');
-        	input.type = 'hidden';
-        	input.name = 'g-recaptcha-response';
-        	input.value = token;
-        	form.appendChild(input);
-        	form.submit();
-    		});
-		}
-		</script>
+		
 		
     </body>
 </html>
