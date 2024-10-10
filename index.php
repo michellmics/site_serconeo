@@ -478,111 +478,101 @@
 		
 		<!-- Start Appointment -->
 		<section id="appointment" class="appointment">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>Estamos sempre à disposição para auxiliá-lo. Agende uma reunião conosco!</h2>
-                    <img src="img/section-img.png" alt="#">
-                    <p>E descubra como podemos ajudar a impulsionar o seu negócio com soluções personalizadas e expertise em contabilidade.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-12">
-                <form class="form" action="#" method="POST" onsubmit="event.preventDefault(); submitForm();">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="name" type="text" placeholder="Nome">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="email" type="email" placeholder="E-mail">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="phone" type="text" placeholder="Telefone">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <div class="nice-select form-control wide" tabindex="0">
-                                    <span class="current">Departmento</span>
-                                    <ul class="list">
-                                        <li data-value="1" class="option selected">Selecione</li>
-                                        <li data-value="2" class="option">RH</li>
-                                        <li data-value="3" class="option">Fiscal</li>
-                                        <li data-value="4" class="option">Dentistry</li>
-                                        <li data-value="5" class="option">Gastroenterology</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <div class="nice-select form-control wide" tabindex="0">
-                                    <span class="current">Regime</span>
-                                    <ul class="list">
-                                        <li data-value="1" class="option selected">Selecione</li>
-                                        <li data-value="2" class="option">Pessoa Física (PF)</li>
-                                        <li data-value="3" class="option">Pessoa Jurídica (PJ)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input type="text" placeholder="Dataa" id="datepicker">
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-12">
-                            <div class="form-group">
-                                <textarea name="message" placeholder="Escreva sua mensagem aqui....."></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-12">
-                            <div class="form-group">
-                                <div class="button">
-                                    <button type="submit" class="btn">Enviar Mensagem</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-md-8 col-12">
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-6 col-md-12 ">
-                <div class="appointment-image">
-                    <img src="img/contact-img.png" alt="#">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script>
-function submitForm() {
-    grecaptcha.execute('6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q', {action: 'submit'}).then(function(token) {
-        const form = document.querySelector('.form');
-        const input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = 'g-recaptcha-response';
-        input.value = token;
-        form.appendChild(input);
-        form.submit();
-    });
-}
-</script>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Estamos sempre à disposição para auxiliá-lo. Agende uma reunião conosco!</h2>
+							<img src="img/section-img.png" alt="#">
+							<p>E descubra como podemos ajudar a impulsionar o seu negócio com soluções personalizadas e expertise em contabilidade.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-12">
+						<form class="form" action="#">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="name" type="text" placeholder="Nome">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="email" type="email" placeholder="E-mail">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="phone" type="text" placeholder="Telefone">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<div class="nice-select form-control wide" tabindex="0"><span class="current">Departmento</span>
+											<ul class="list">
+												<li data-value="1" class="option selected ">Selecione</li>
+												<li data-value="2" class="option">RH</li>
+												<li data-value="3" class="option">Fiscal</li>
+												<li data-value="4" class="option">Dentistry</li>
+												<li data-value="5" class="option">Gastroenterology</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<div class="nice-select form-control wide" tabindex="0"><span class="current">Regime</span>
+											<ul class="list">
+												<li data-value="1" class="option selected ">Selecione</li>
+												<li data-value="2" class="option">Pessoa Física (PF)</li>
+												<li data-value="3" class="option">Pessoa Juridica (PJ)</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input type="text" placeholder="Data" id="datepicker">
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-12">
+									<div class="form-group">
+										<textarea name="message" placeholder="Escreva sua mensagem aqui....."></textarea>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-lg-5 col-md-4 col-12">
+									<div class="form-group">
+										<div class="button">
+											<!-- <button type="submit" class="btn" >Enviar Mensagem</button>-->
+											<button class="g-recaptcha" data-sitekey="6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q" data-callback='onSubmit' data-action='submit'> Submit</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-7 col-md-8 col-12">
+								<!--	<p>( entraremos em contato via whatsapp ou e-mail )</p> -->
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6 col-md-12 ">
+						<div class="appointment-image">
+							<img src="img/contact-img.png" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- End Appointment -->
 		
-		
+		<script>
+  			function onSubmit(token) {
+    			document.getElementById("demo-form").submit();
+  			}
+		</script>
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
@@ -643,7 +633,19 @@ function submitForm() {
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
 
-
+		<script>
+		function submitForm() {
+    		grecaptcha.execute('6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q', {action: 'submit'}).then(function(token) {
+        	const form = document.querySelector('.form');
+        	const input = document.createElement('input');
+        	input.type = 'hidden';
+        	input.name = 'g-recaptcha-response';
+        	input.value = token;
+        	form.appendChild(input);
+        	form.submit();
+    		});
+		}
+		</script>
 		
     </body>
 </html>
