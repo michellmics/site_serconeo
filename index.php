@@ -274,10 +274,10 @@
 						<!-- Start Single features -->
 						<div class="single-features">
 							<div class="signle-icon">
-								<i class="icofont icofont-ambulance-cross"></i>
+								<i class="icofont icofont-briefcase"></i>
 							</div>
-							<h3>Emergency Help</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+							<h3>Planejamento Financeiro</h3>
+							<p>Entender a saúde financeira do seu negócio. Analisamos suas necessidades e objetivos para criar uma estratégia financeira personalizada.</p>
 						</div>
 						<!-- End Single features -->
 					</div>
@@ -287,8 +287,8 @@
 							<div class="signle-icon">
 								<i class="icofont icofont-medical-sign-alt"></i>
 							</div>
-							<h3>Enriched Pharmecy</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+							<h3>Contabilidade de Precisão</h3>
+							<p>Garantimos registros contábeis exatos, gerenciamento de tributos e compliance, fornecendo uma base sólida para o sucesso do seu negócio.</p>
 						</div>
 						<!-- End Single features -->
 					</div>
