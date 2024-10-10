@@ -9,6 +9,9 @@
 		<meta name='copyright' content=''>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
+		<!-- reCaptcha -->
+		<script src="https://www.google.com/recaptcha/api.js?render=6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q"></script>
+
 		<!-- Title -->
         <title>Serconeo Contabilidade - Seu parceiro contábil para decisões inteligentes.</title>
 		
@@ -44,6 +47,12 @@
 		
     </head>
     <body>
+
+	<script>
+  		function onSubmit(token) {
+    		document.getElementById("demo-form").submit();
+  		}
+	</script>
 	
 		<!-- Preloader -->
         <div class="preloader">
@@ -481,7 +490,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-12">
-						<form class="form" action="#">
+						<form class="form" action="#" method="POST" onsubmit="event.preventDefault(); submitForm();">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
@@ -533,13 +542,12 @@
 									</div>
 								</div>
 							</div>
-							<!-- Adicionando o reCAPTCHA -->
-							<div class="g-recaptcha" data-sitekey="SUA_CHAVE_DO_SITE"></div>
+							
 							<div class="row">
 								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
 										<div class="button">
-											<button type="submit" class="btn">Enviar Mensagem</button>
+											<button type="submit" class="btn" class="g-recaptcha" data-sitekey="6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q" data-callback='onSubmit'>Enviar Mensagem</button>
 										</div>
 									</div>
 								</div>
@@ -619,7 +627,20 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
-		<!-- reCaptcha -->
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+		<script>
+		function submitForm() {
+    		grecaptcha.execute('6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q', {action: 'submit'}).then(function(token) {
+        	const form = document.querySelector('.form');
+        	const input = document.createElement('input');
+        	input.type = 'hidden';
+        	input.name = 'g-recaptcha-response';
+        	input.value = token;
+        	form.appendChild(input);
+        	form.submit();
+    		});
+		}
+		</script>
+		
     </body>
 </html>
