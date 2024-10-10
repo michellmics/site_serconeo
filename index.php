@@ -140,8 +140,8 @@
 						<div class="row">
 							<div class="col-lg-7">
 								<div class="text">
-									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal, mantendo a documentação de sua empresa em dia</h1>
-									<p>Atendemos de micro empresas até empresas de grande porte, adotando todos os regimes de tributação necessários. </p>
+									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal</h1>
+									<p> mantendo a documentação de sua empresa em dia. </p>
 									<div class="button">
 										<a href="#appointment" class="btn">Entre em contato</a>
 										<a href="#services" class="btn primary">Leia Mais</a>
@@ -158,8 +158,8 @@
 						<div class="row">
 							<div class="col-lg-7">
 							<div class="text">
-									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal, mantendo a documentação de sua empresa em dia</h1>
-									<p>Atendemos de micro empresas até empresas de grande porte, adotando todos os regimes de tributação necessários. </p>
+									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal</h1>
+									<p> mantendo a documentação de sua empresa em dia. </p>
 									<div class="button">
 										<a href="#appointment" class="btn">Entre em contato</a>
 										<a href="#services" class="btn primary">Leia Mais</a>
@@ -176,8 +176,8 @@
 						<div class="row">
 							<div class="col-lg-7">
 							<div class="text">
-									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal, mantendo a documentação de sua empresa em dia</h1>
-									<p>Atendemos de micro empresas até empresas de grande porte, adotando todos os regimes de tributação necessários. </p>
+									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal</h1>
+									<p> mantendo a documentação de sua empresa em dia. </p>
 									<div class="button">
 										<a href="#appointment" class="btn">Entre em contato</a>
 										<a href="#services" class="btn primary">Leia Mais</a>
