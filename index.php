@@ -533,6 +533,8 @@
 									</div>
 								</div>
 							</div>
+							<!-- Adicionando o reCAPTCHA -->
+							<div class="g-recaptcha" data-sitekey="SUA_CHAVE_DO_SITE"></div>
 							<div class="row">
 								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
@@ -617,5 +619,7 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
+		<!-- reCaptcha -->
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </body>
 </html>
