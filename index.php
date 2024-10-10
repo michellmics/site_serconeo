@@ -1,6 +1,6 @@
 <?php
+echo "teste";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $token = $_POST['g-recaptcha-response'];
     $secretKey = "6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q"; // Substitua pela sua chave secreta
     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$token}");
@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // O captcha foi validado com sucesso, processe o formulário.
         echo "Formulário enviado com sucesso.";
     }
-}
+
 die();
 ?>
 
