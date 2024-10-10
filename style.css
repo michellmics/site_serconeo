@@ -54,6 +54,9 @@ body{
 	font-size:14px;
 	color:#888;
 }
+html {
+    scroll-behavior: smooth;
+}
 .pro-features {
 	position: fixed;
 	right: -300px;
