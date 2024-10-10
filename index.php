@@ -296,7 +296,7 @@
 						<!-- Start Single features -->
 						<div class="single-features last">
 							<div class="signle-icon">
-								<i class="icofont icofont-medical-sign-alt"></i>
+								<i class="icofont icofont-chart-pie-altt"></i>
 							</div>
 							<h3>Crescimento e Controle</h3>
 							<p>Ajudamos você a monitorar e ajustar o desempenho, garantindo que sua empresa continue crescendo de forma sustentável.</p>
