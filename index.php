@@ -535,7 +535,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="form-group">
-                                <input type="text" placeholder="Data" id="datepicker">
+                                <input type="text" placeholder="Dataa" id="datepicker">
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-12">
