@@ -141,7 +141,7 @@
 							<div class="col-lg-7">
 								<div class="text">
 									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal</h1>
-									<p> mantendo a documentação de sua empresa em dia. </p>
+									<p> Mantendo a documentação da sua empresa sempre em ordem e atualizada. </p>
 									<div class="button">
 										<a href="#appointment" class="btn">Entre em contato</a>
 										<a href="#services" class="btn primary">Leia Mais</a>
@@ -159,7 +159,7 @@
 							<div class="col-lg-7">
 							<div class="text">
 									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal</h1>
-									<p> mantendo a documentação de sua empresa em dia. </p>
+									<p> Mantendo a documentação da sua empresa sempre em ordem e atualizada. </p>
 									<div class="button">
 										<a href="#appointment" class="btn">Entre em contato</a>
 										<a href="#services" class="btn primary">Leia Mais</a>
@@ -177,7 +177,7 @@
 							<div class="col-lg-7">
 							<div class="text">
 									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal</h1>
-									<p> mantendo a documentação de sua empresa em dia. </p>
+									<p> Mantendo a documentação da sua empresa sempre em ordem e atualizada. </p>
 									<div class="button">
 										<a href="#appointment" class="btn">Entre em contato</a>
 										<a href="#services" class="btn primary">Leia Mais</a>
