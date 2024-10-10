@@ -296,10 +296,10 @@
 						<!-- Start Single features -->
 						<div class="single-features last">
 							<div class="signle-icon">
-								<i class="icofont icofont-stethoscope"></i>
+								<i class="icofont icofont-growth"></i>
 							</div>
-							<h3>Medical Treatment</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+							<h3>Crescimento e Controle</h3>
+							<p>Ajudamos você a monitorar e ajustar o desempenho, garantindo que sua empresa continue crescendo de forma sustentável.</p>
 						</div>
 						<!-- End Single features -->
 					</div>
