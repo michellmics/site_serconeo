@@ -547,7 +547,7 @@
 								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
 										<div class="button">
-											<button type="submit" class="btn" class="g-recaptcha" data-sitekey="6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q" data-callback='onSubmit'>Enviar Mensagem</button>
+											<button type="submit" class="btn">Enviar Mensagem</button>
 										</div>
 									</div>
 								</div>
