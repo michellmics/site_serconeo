@@ -48,31 +48,36 @@
     </head>
     <body>
 	<div id="taxas-cambio"></div>
-
+	
+<!-- Cambio -->
 <script>
-fetch('https://api.exchangerate-api.com/v4/latest/USD') // Usa USD como moeda base
-    .then(response => response.json())
-    .then(data => {
-        const taxasDeCambio = {
-            "Dólar": data.rates.USD,
-            "Euro": data.rates.EUR,
-            "Libra Esterlina": data.rates.GBP,
-            "Peso Argentino": data.rates.ARS
-        };
+	fetch('https://api.exchangerate-api.com/v4/latest/BRL') // Usa BRL como moeda base
+	    .then(response => response.json())
+	    .then(data => {
+	        const taxasDeCambio = {
+	            "Real": data.rates.BRL,
+	            "Dólar": data.rates.USD,
+	            "Euro": data.rates.EUR,
+	            "Libra Esterlina": data.rates.GBP,
+	            "Peso Argentino": data.rates.ARS
+	        };
 
-        console.log('Taxas de Câmbio:');
-        console.log(taxasDeCambio);
-        
-        // Aqui você pode atualizar o DOM ou fazer algo com as taxas de câmbio
-        document.getElementById('taxas-cambio').innerHTML = `
-            <p>Dólar: ${taxasDeCambio["Dólar"]}</p>
-            <p>Euro: ${taxasDeCambio["Euro"]}</p>
-            <p>Libra Esterlina: ${taxasDeCambio["Libra Esterlina"]}</p>
-            <p>Peso Argentino: ${taxasDeCambio["Peso Argentino"]}</p>
-        `;
-    })
-    .catch(error => console.error('Erro ao buscar taxas de câmbio:', error));
+	        console.log('Taxas de Câmbio:');
+	        console.log(taxasDeCambio);
+		
+	        // Atualiza o DOM com as taxas de câmbio
+	        document.getElementById('taxas-cambio').innerHTML = `
+	            <p>Real: ${taxasDeCambio["Real"]}</p>
+	            <p>Dólar: ${taxasDeCambio["Dólar"]}</p>
+	            <p>Euro: ${taxasDeCambio["Euro"]}</p>
+	            <p>Libra Esterlina: ${taxasDeCambio["Libra Esterlina"]}</p>
+	            <p>Peso Argentino: ${taxasDeCambio["Peso Argentino"]}</p>
+	        `;
+	    })
+	    .catch(error => console.error('Erro ao buscar taxas de câmbio:', error));
 </script>
+
+
 		<!-- Preloader -->
 		<div class="preloader">
 		    <div class="loader">
