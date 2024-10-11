@@ -272,7 +272,7 @@
 										<i class="icofont-ui-clock"></i>
 									</div>
 									<div class="single-content">
-										<span>Nosso expediente</span>
+										<span>Expediente</span>
 										<h4>Horário de atendimento</h4>
 										<ul class="time-sidual">
 											<li class="day">Segunda-Feira <span>8.00-18.00</span></li>
