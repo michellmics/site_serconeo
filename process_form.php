@@ -14,16 +14,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Verifique o sucesso da validação
         if ($responseKeys["success"]) {
-            // Validação bem-sucedida
-            echo "Formulário enviado com sucesso!";
-            // Aqui você pode processar o formulário
-        } else {
-            // Validação falhou
-            echo "Falha na verificação do reCAPTCHA. Por favor, tente novamente.";
+
+            // Obter os dados do formulário
+            $name = htmlspecialchars($_POST['name']);
+            $email = htmlspecialchars($_POST['email']);
+            $phone = htmlspecialchars($_POST['phone']);
+            $department = htmlspecialchars($_POST['department']);
+            $regime = htmlspecialchars($_POST['regime']);
+            $date = htmlspecialchars($_POST['date']);
+            $message = htmlspecialchars($_POST['message']);
+
+            // Configurações do e-mail
+            $to = "contato@serconeo.com.br"; 
+            $subject = "Contato pelo site da Serconeo";
+            $body = "Nome: $name\n";
+            $body .= "E-mail: $email\n";
+            $body .= "Telefone: $phone\n";
+            $body .= "Departamento: $department\n";
+            $body .= "Regime: $regime\n";
+            $body .= "Data: $date\n";
+            $body .= "Mensagem: $message\n";
+
+            // Adiciona cabeçalhos para o e-mail
+            $headers = "From: $email\r\n";
+            $headers .= "Reply-To: $email\r\n";
+
+
+            // Enviar o e-mail
+            if (mail($to, $subject, $body, $headers)) {
+                echo "Formulário enviado com sucesso!";
+            } else {
+                echo "Falha ao enviar o e-mail. Por favor, tente novamente.";
+            }
+        } 
+        else 
+            {
+                // Validação falhou
+                echo "Falha na verificação do reCAPTCHA. Por favor, tente novamente.";
+            }
+    } 
+    else 
+        {
+            // reCAPTCHA não foi resolvido
+            echo "Por favor, complete o reCAPTCHA.";
         }
-    } else {
-        // reCAPTCHA não foi resolvido
-        echo "Por favor, complete o reCAPTCHA.";
-    }
 }
 ?>
