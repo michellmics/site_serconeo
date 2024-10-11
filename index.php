@@ -70,7 +70,7 @@
 	            <p>Real: ${taxasDeCambio["Real"]}</p>
 	            <p>Dólar: ${taxasDeCambio["Dólar"]}</p>
 	            <p>Euro: ${taxasDeCambio["Euro"]}</p>
-	            <p>Libra Esterlina: ${taxasDeCambio["Libra Esterlina"]}</p>
+	            <p>Libra: ${taxasDeCambio["Libra Esterlina"]}</p>
 	            <p>Peso Argentino: ${taxasDeCambio["Peso Argentino"]}</p>
 	        `;
 	    })
