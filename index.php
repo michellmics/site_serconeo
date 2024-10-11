@@ -241,8 +241,8 @@
 									<div class="single-content">
 										<span>Contatos</span>
 										<h4>E-mail e Telefones</h4>
-										<p>+55 (41) 3044-6383 +55 (41) 3044-6382 E-mail: contato@serconeo.com.br</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+										<p>+55 (41) 3044-6383 +55 (41) 3044-6382</p> <p>E-mail: contato@serconeo.com.br</p>
+										<a href="#appointment">Leia Mais<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
