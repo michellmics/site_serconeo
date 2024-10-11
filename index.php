@@ -496,7 +496,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-12">
-					<form id="demo-form" class="form" action="SEU_SCRIPT_PHP.php" method="POST">
+					<form id="demo-form" class="form" action="send.php" method="POST">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
