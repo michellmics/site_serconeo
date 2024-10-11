@@ -236,7 +236,7 @@
 							<div class="single-schedule first">
 								<div class="inner">
 									<div class="icon">
-										<i class="fa fa-ambulance"></i>
+										<i class="fa fa-exchange-alt"></i>
 									</div>
 									<div class="single-content">
 										<span>Cotações</span>
