@@ -10,6 +10,11 @@ if (isset($_POST['g-recaptcha-response'])) {
     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$token}");
     $responseKeys = json_decode($response, true);
 
+    // Exibe o conteúdo retornado pelo Google (para depuração)
+    echo "<pre>";
+    print_r($responseKeys);  // Mostra a resposta completa
+    echo "</pre>";
+
     // Verifica se o reCAPTCHA foi bem-sucedido
     if (intval($responseKeys["success"]) === 1) {
         // reCAPTCHA validado, processe os dados do formulário
@@ -19,17 +24,16 @@ if (isset($_POST['g-recaptcha-response'])) {
         $message = $_POST['message'];
 
         // Aqui você pode adicionar sua lógica de processamento do formulário
-        // Exemplo: Enviar e-mail ou salvar os dados no banco de dados
-
-        // Simples feedback de sucesso
         echo "Formulário enviado com sucesso!";
         echo "<br>Nome: $name";
         echo "<br>Email: $email";
         echo "<br>Telefone: $phone";
         echo "<br>Mensagem: $message";
     } else {
-        // O reCAPTCHA falhou
+        // O reCAPTCHA falhou - mostre o código de erro
         echo "Falha na verificação do reCAPTCHA. Por favor, tente novamente.";
+        echo "<br>Códigos de erro: ";
+        print_r($responseKeys['error-codes']);
     }
 } else {
     // Se o token não foi enviado
