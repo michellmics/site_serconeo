@@ -192,8 +192,8 @@
 						<div class="row">
 							<div class="col-lg-7">
 							<div class="text">
-									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal</h1>
-									<p> Mantendo a documentação da sua empresa sempre em ordem e atualizada. </p>
+									<h1>Sempre mantendo o cliente atualizado, em relação aos acontecimentos no <span>"mundo contábil"</span></h1>
+									<p> Munida de profissionais que acompanham as evuloções, através de cursos, palestras, leitura, e muita troca de idéias com os bons profissionais. </p>
 									<div class="button">
 										<a href="#appointment" class="btn">Entre em contato</a>
 										<a href="#services" class="btn primary">Leia Mais</a>
