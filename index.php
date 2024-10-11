@@ -484,7 +484,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-12">
-					<form id="demo-form" class="form" action="send.php" method="POST">
+					<form id="demo-form" class="form" action="process_form.php" method="POST">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
