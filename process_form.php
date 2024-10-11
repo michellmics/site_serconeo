@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Configurações do e-mail
             $to = "contato@serconeo.com.br"; 
-            $subject = "ATENCAO: Contato pelo site da Serconeo";
+            $subject = "ATENÇÃO: Contato pelo site da Serconeo";
             $body = "Nome: $name\n";
             $body .= "E-mail: $email\n";
             $body .= "Telefone: $phone\n";
@@ -34,6 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Adiciona cabeçalhos para o e-mail
             $headers = "From: $email\r\n";
             $headers .= "Reply-To: $email\r\n";
+            $headers .= "Content-Type: text/plain; charset=UTF-8\r\n"; // Define a codificação como UTF-8
+            $headers .= "MIME-Version: 1.0\r\n";
 
 
             // Enviar o e-mail
