@@ -204,24 +204,7 @@
 					</div>
 				</div>
 				<!-- Start End Slider -->
-				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider3.jpg')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-							<div class="text">
-									<h1>Enquanto você está focado com os <span>negócios</span>, nós cuidamos da conformidade legal</h1>
-									<p> Mantendo a documentação da sua empresa sempre em ordem e atualizada. </p>
-									<div class="button">
-										<a href="#appointment" class="btn">Entre em contato</a>
-										<a href="#services" class="btn primary">Leia Mais</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Slider -->
+
 			</div>
 		</section>
 		<!--/ End Slider Area -->
