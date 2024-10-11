@@ -52,29 +52,29 @@
 <!-- Cambio -->
 <script>
 	fetch('https://api.exchangerate-api.com/v4/latest/BRL') // Usa BRL como moeda base
-	    .then(response => response.json())
-	    .then(data => {
-	        const taxasDeCambio = {
-	            "Real": data.rates.BRL,
-	            "Dólar": data.rates.USD,
-	            "Euro": data.rates.EUR,
-	            "Libra Esterlina": data.rates.GBP,
-	            "Peso Argentino": data.rates.ARS
-	        };
+    .then(response => response.json())
+    .then(data => {
+        // Taxas de câmbio baseadas no Real (BRL)
+        const taxasDeCambio = {
+            "Dólar": (1 / data.rates.USD).toFixed(2), // 1 USD em BRL
+            "Euro": (1 / data.rates.EUR).toFixed(2), // 1 EUR em BRL
+            "Libra Esterlina": (1 / data.rates.GBP).toFixed(2), // 1 GBP em BRL
+            "Peso Argentino": (1 / data.rates.ARS).toFixed(2) // 1 ARS em BRL
+        };
 
-	        console.log('Taxas de Câmbio:');
-	        console.log(taxasDeCambio);
-		
-	        // Atualiza o DOM com as taxas de câmbio
-	        document.getElementById('taxas-cambio').innerHTML = `
-	            <p>Real: ${taxasDeCambio["Real"]}</p>
-	            <p>Dólar: ${taxasDeCambio["Dólar"]}</p>
-	            <p>Euro: ${taxasDeCambio["Euro"]}</p>
-	            <p>Libra: ${taxasDeCambio["Libra Esterlina"]}</p>
-	            <p>Peso Argentino: ${taxasDeCambio["Peso Argentino"]}</p>
-	        `;
-	    })
-	    .catch(error => console.error('Erro ao buscar taxas de câmbio:', error));
+        console.log('Valores em Reais:');
+        console.log(taxasDeCambio);
+        
+        // Atualiza o DOM com as taxas de câmbio
+        document.getElementById('taxas-cambio').innerHTML = `
+            <p>1 Dólar: R$ ${taxasDeCambio["Dólar"]}</p>
+            <p>1 Euro: R$ ${taxasDeCambio["Euro"]}</p>
+            <p>1 Libra: R$ ${taxasDeCambio["Libra Esterlina"]}</p>
+            <p>1 Peso Argentino: R$ ${taxasDeCambio["Peso Argentino"]}</p>
+        `;
+    })
+    .catch(error => console.error('Erro ao buscar taxas de câmbio:', error));
+
 </script>
 
 
