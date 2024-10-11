@@ -231,22 +231,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-12">
-							<!-- single-schedule -->
-							<div class="single-schedule middle">
-								<div class="inner">
-									<div class="icon">
-										<i class="icofont-prescription"></i>
-									</div>
-									<div class="single-content">
-										<span>Fusce Porttitor</span>
-										<h4>Doctors Timetable</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
+					
 						<div class="col-lg-4 col-md-12 col-12">
 							<!-- single-schedule -->
 							<div class="single-schedule last">
