@@ -504,11 +504,10 @@
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
 										<div class="nice-select form-control wide" tabindex="0"><span class="current">Departmento</span>
-											<ul class="list">
-												<li data-value="1" class="option selected ">Selecione</li>
+											<ul class="list" name="department">
+												<li data-value="1" class="option selected ">Contábil</li>
 												<li data-value="2" class="option">Folha de Pagamento</li>
 												<li data-value="3" class="option">Fiscal</li>
-												<li data-value="4" class="option">Contábil</li>
 												<li data-value="5" class="option">Comércio Exterior</li>
 											</ul>
 										</div>

@@ -20,19 +20,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $email = htmlspecialchars($_POST['email']);
             $phone = htmlspecialchars($_POST['phone']);
             $department = htmlspecialchars($_POST['department']);
-            $regime = htmlspecialchars($_POST['regime']);
-            $date = htmlspecialchars($_POST['date']);
             $message = htmlspecialchars($_POST['message']);
 
             // Configurações do e-mail
             $to = "contato@serconeo.com.br"; 
-            $subject = "Contato pelo site da Serconeo";
+            $subject = "ATENÇÃO: Contato pelo site da Serconeo";
             $body = "Nome: $name\n";
             $body .= "E-mail: $email\n";
             $body .= "Telefone: $phone\n";
             $body .= "Departamento: $department\n";
-            $body .= "Regime: $regime\n";
-            $body .= "Data: $date\n";
             $body .= "Mensagem: $message\n";
 
             // Adiciona cabeçalhos para o e-mail
