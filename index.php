@@ -543,14 +543,7 @@
                                 		<div class="g-recaptcha" data-sitekey="6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q" data-callback="onSubmit"></div>
                             		</div>
                         		</div>
-								<div class="col-lg-5 col-md-4 col-12">
-									<div class="form-group">
-										<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-										<div class="button">
-										<button type="submit" class="btn" onclick="onSubmit(event)">Enviar Mensagem</button>
-										</div>
-									</div>
-								</div>
+								
 								<div class="col-lg-7 col-md-8 col-12">
 								<!--	<p>( entraremos em contato via whatsapp ou e-mail )</p> -->
 								</div>
@@ -568,16 +561,16 @@
 		<!-- End Appointment -->
 		
 		<script>
-        function onSubmit(e) {
-            e.preventDefault(); // Impede o envio do formulário
-            grecaptcha.ready(function() {
-                grecaptcha.execute('6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q', {action: 'submit'}).then(function(token) {
-                    document.getElementById('g-recaptcha-response').value = token; // Armazena o token no campo oculto
-                    document.getElementById('demo-form').submit(); // Envia o formulário
-                });
-            });
-        }
-    </script>
+        	function onSubmit(e) {
+        	    e.preventDefault(); // Impede o envio do formulário
+        	    grecaptcha.ready(function() {
+        	        grecaptcha.execute('6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q', {action: 'submit'}).then(function(token) {
+        	            document.getElementById('g-recaptcha-response').value = token; // Armazena o token no campo oculto
+        	            document.getElementById('demo-form').submit(); // Envia o formulário
+        	        });
+        	    });
+        	}
+    	</script>
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
