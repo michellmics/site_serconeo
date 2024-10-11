@@ -67,10 +67,10 @@
         
         // Atualiza o DOM com as taxas de câmbio
         document.getElementById('taxas-cambio').innerHTML = `
-            <p>1 Dólar: R$ ${taxasDeCambio["Dólar"]}</p>
-            <p>1 Euro: R$ ${taxasDeCambio["Euro"]}</p>
-            <p>1 Libra: R$ ${taxasDeCambio["Libra Esterlina"]}</p>
-            <p>1 Peso Argentino: R$ ${taxasDeCambio["Peso Argentino"]}</p>
+            Dólar: R$ ${taxasDeCambio["Dólar"]}<br>
+            Euro: R$ ${taxasDeCambio["Euro"]}<br>
+            Libra: R$ ${taxasDeCambio["Libra Esterlina"]}<br>
+            Peso Argentino: R$ ${taxasDeCambio["Peso Argentino"]}<br>
         `;
     })
     .catch(error => console.error('Erro ao buscar taxas de câmbio:', error));
@@ -239,8 +239,8 @@
 										<i class="fa fa-ambulance"></i>
 									</div>
 									<div class="single-content">
-										<span>Lorem Amet</span>
-										<h4>Emergency Cases</h4>
+										<span>Moedas Estrangeiras</span>
+										<h4>Cotações</h4>
 										<div id="taxas-cambio"></div>
 										<!--  <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p> -->
 										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
