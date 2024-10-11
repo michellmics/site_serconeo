@@ -47,7 +47,7 @@
 		
     </head>
     <body>
-	<div id="taxas-cambio"></div>
+	
 	
 <!-- Cambio -->
 <script>
@@ -69,7 +69,7 @@
         document.getElementById('taxas-cambio').innerHTML = `
             <p>1 Dólar: R$ ${taxasDeCambio["Dólar"]}</p>
             <p>1 Euro: R$ ${taxasDeCambio["Euro"]}</p>
-            <p>1 Libras: R$ ${taxasDeCambio["Libra Esterlina"]}</p>
+            <p>1 Libra: R$ ${taxasDeCambio["Libra Esterlina"]}</p>
             <p>1 Peso Argentino: R$ ${taxasDeCambio["Peso Argentino"]}</p>
         `;
     })
@@ -241,7 +241,8 @@
 									<div class="single-content">
 										<span>Lorem Amet</span>
 										<h4>Emergency Cases</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+										<div id="taxas-cambio"></div>
+										<!--  <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p> -->
 										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
