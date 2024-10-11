@@ -47,32 +47,31 @@
 		
     </head>
     <body>
-	<div id="cotacao">
-    <h2>Cotações</h2>
-    <p id="dolar">Dólar: <span id="dolar-valor"></span></p>
-    <p id="bolsa">Bolsa: <span id="bolsa-valor"></span></p>
-</div>
+	<div id="taxas-cambio"></div>
 
 <script>
-async function fetchCotacoes() {
-    try {
-        // Obtenha a cotação do dólar
-        const dolarResponse = await fetch('https://api.exchangerate-api.com/v4/latest/USD'); // Altere a URL conforme necessário
-        const dolarData = await dolarResponse.json();
-        document.getElementById('dolar-valor').innerText = dolarData.rates.BRL; // Supondo que BRL seja o código do real
+fetch('https://api.exchangerate-api.com/v4/latest/USD') // Usa USD como moeda base
+    .then(response => response.json())
+    .then(data => {
+        const taxasDeCambio = {
+            "Dólar": data.rates.USD,
+            "Euro": data.rates.EUR,
+            "Libra Esterlina": data.rates.GBP,
+            "Peso Argentino": data.rates.ARS
+        };
 
-        // Obtenha a cotação da bolsa (exemplo fictício)
-        const bolsaResponse = await fetch('https://api.example.com/stock'); // Altere a URL para uma API de bolsa
-        const bolsaData = await bolsaResponse.json();
-        document.getElementById('bolsa-valor').innerText = bolsaData.price; // Altere conforme a resposta da API
-
-    } catch (error) {
-        console.error('Erro ao buscar cotações:', error);
-    }
-}
-
-// Chama a função para buscar as cotações
-fetchCotacoes();
+        console.log('Taxas de Câmbio:');
+        console.log(taxasDeCambio);
+        
+        // Aqui você pode atualizar o DOM ou fazer algo com as taxas de câmbio
+        document.getElementById('taxas-cambio').innerHTML = `
+            <p>Dólar: ${taxasDeCambio["Dólar"]}</p>
+            <p>Euro: ${taxasDeCambio["Euro"]}</p>
+            <p>Libra Esterlina: ${taxasDeCambio["Libra Esterlina"]}</p>
+            <p>Peso Argentino: ${taxasDeCambio["Peso Argentino"]}</p>
+        `;
+    })
+    .catch(error => console.error('Erro ao buscar taxas de câmbio:', error));
 </script>
 		<!-- Preloader -->
 		<div class="preloader">
