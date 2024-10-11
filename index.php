@@ -236,7 +236,7 @@
 							<div class="single-schedule first">
 								<div class="inner">
 									<div class="icon">
-										<i class="fa fa-money-check-alt"></i>
+										<i class="fa icofont-chart-line"></i>
 									</div>
 									<div class="single-content">
 										<span>Cotações</span>
