@@ -510,7 +510,7 @@
 						<div class="section-title">
 							<h2>Estamos sempre à disposição para auxiliá-lo. Agende uma reunião conosco!</h2>
 							<img src="img/section-img.png" alt="#">
-							<p>E descubra como podemos ajudar a impulsionar o seu negócio com soluções personalizadas e expertise em contabilidade.</p>
+							<p>E descubra como podemo ajudar a impulsionar o seu negócio com soluções personalizadas e expertise em contabilidade.</p>
 						</div>
 					</div>
 				</div>
