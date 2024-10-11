@@ -556,34 +556,35 @@
 						<div id="form-message"></div>
 						<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+						<!-- Ajax para envio e exibicao do resultado sem load de pag nova -->
 						<script>
-document.getElementById('demo-form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Impede o envio tradicional do formulário
-
-    // Verifica o reCAPTCHA
-    var recaptchaResponse = grecaptcha.getResponse();
-    if (recaptchaResponse.length === 0) {
-        document.getElementById('form-message').innerHTML = "Por favor, complete o reCAPTCHA.";
-        return; // Se o reCAPTCHA não foi resolvido, não submeta o formulário
-    }
-
-    var formData = new FormData(this); // Captura todos os dados do formulário
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', this.action, true); // Configura o envio via POST para o arquivo PHP
-
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            // Exibe a resposta do servidor na página
-            document.getElementById('form-message').innerHTML = xhr.responseText;
-        } else {
-            document.getElementById('form-message').innerHTML = "Houve um erro no envio do formulário.";
-        }
-    };
-
-    xhr.send(formData); // Envia o formulário via AJAX
-});
-</script>
+							document.getElementById('demo-form').addEventListener('submit', function(e) {
+							    e.preventDefault(); // Impede o envio tradicional do formulário
+							
+							    // Verifica o reCAPTCHA
+							    var recaptchaResponse = grecaptcha.getResponse();
+							    if (recaptchaResponse.length === 0) {
+							        document.getElementById('form-message').innerHTML = "Por favor, complete o reCAPTCHA.";
+							        return; // Se o reCAPTCHA não foi resolvido, não submeta o formulário
+							    }
+							
+							    var formData = new FormData(this); // Captura todos os dados do formulário
+							
+							    var xhr = new XMLHttpRequest();
+							    xhr.open('POST', this.action, true); // Configura o envio via POST para o arquivo PHP
+							
+							    xhr.onload = function() {
+							        if (xhr.status === 200) {
+							            // Exibe a resposta do servidor na página
+							            document.getElementById('form-message').innerHTML = xhr.responseText;
+							        } else {
+							            document.getElementById('form-message').innerHTML = "Houve um erro no envio do formulário.";
+							        }
+							    };
+							
+							    xhr.send(formData); // Envia o formulário via AJAX
+							});
+						</script>
 
 
 					</div>
