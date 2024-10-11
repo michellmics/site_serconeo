@@ -538,12 +538,15 @@
 							</div>
 							
 							<div class="row">
-								<div class="col-lg-5 col-md-4 col-12">
-                            		<div class="form-group">
-                                		<div class="g-recaptcha" data-sitekey="6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q" data-callback="onSubmit"></div>
-                            		</div>
-                        		</div>
 								
+								<div class="col-lg-5 col-md-4 col-12">
+									<div class="form-group">
+										<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+										<div class="button">
+										<button type="submit" class="btn" onclick="onSubmit(event)">Enviar Mensagem</button>
+										</div>
+									</div>
+								</div>
 								<div class="col-lg-7 col-md-8 col-12">
 								<!--	<p>( entraremos em contato via whatsapp ou e-mail )</p> -->
 								</div>
