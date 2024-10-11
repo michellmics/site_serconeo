@@ -1,6 +1,6 @@
 <?php
 // Chave secreta do reCAPTCHA (substitua pela sua)
-$secretKey = '6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q';
+$secretKey = '6LcZHF4qAAAAAB8x_VRiQoivWpb5kzz_SOy8EwIT';
 
 // Verifica se o token do reCAPTCHA foi enviado
 if (isset($_POST['g-recaptcha-response'])) {
