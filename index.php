@@ -506,30 +506,16 @@
 										<div class="nice-select form-control wide" tabindex="0"><span class="current">Departmento</span>
 											<ul class="list">
 												<li data-value="1" class="option selected ">Selecione</li>
-												<li data-value="2" class="option">RH</li>
+												<li data-value="2" class="option">Folha de Pagamento</li>
 												<li data-value="3" class="option">Fiscal</li>
-												<li data-value="4" class="option">Dentistry</li>
-												<li data-value="5" class="option">Gastroenterology</li>
+												<li data-value="4" class="option">Contábil</li>
+												<li data-value="5" class="option">Comércio Exterior</li>
 											</ul>
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current">Regime</span>
-											<ul class="list">
-												<li data-value="1" class="option selected ">Selecione</li>
-												<li data-value="2" class="option">Pessoa Física (PF)</li>
-												<li data-value="3" class="option">Pessoa Juridica (PJ)</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<input type="text" placeholder="Data" id="datepicker">
-									</div>
-								</div>
+								
+							
 								<div class="col-lg-12 col-md-12 col-12">
 									<div class="form-group">
 										<textarea name="message" placeholder="Escreva sua mensagem aqui....."></textarea>
