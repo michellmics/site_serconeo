@@ -69,7 +69,7 @@
         document.getElementById('taxas-cambio').innerHTML = `
             <p>1 Dólar: R$ ${taxasDeCambio["Dólar"]}</p>
             <p>1 Euro: R$ ${taxasDeCambio["Euro"]}</p>
-            <p>1 Libra: R$ ${taxasDeCambio["Libra Esterlina"]}</p>
+            <p>1 Libras: R$ ${taxasDeCambio["Libra Esterlina"]}</p>
             <p>1 Peso Argentino: R$ ${taxasDeCambio["Peso Argentino"]}</p>
         `;
     })
