@@ -12,6 +12,18 @@
 		<!-- reCaptcha -->
 		<script src="https://www.google.com/recaptcha/api.js?render=6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q"></script>
 
+		<script>
+        	function onSubmit(event) {
+        	    event.preventDefault(); // Impede o envio imediato do formulário
+        	    grecaptcha.ready(function() {
+        	        grecaptcha.execute('6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q', {action: 'submit'}).then(function(token) {
+        	            document.getElementById('g-recaptcha-response').value = token; // Armazena o token no campo oculto
+        	            document.getElementById('demo-form').submit(); // Envia o formulário
+        	        });
+        	    });
+        	}
+    	</script>
+
 		<!-- Title -->
         <title>Serconeo Contabilidade - Seu parceiro contábil para decisões inteligentes.</title>
 		
@@ -539,13 +551,8 @@
 							
 							<div class="row">
 								<div class="col-lg-5 col-md-4 col-12">
-                            		<div class="form-group">
-                                		<div class="g-recaptcha" data-sitekey="6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q" data-callback="onSubmit"></div>
-                            		</div>
-                        		</div>
-								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
-										
+										<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 										<div class="button">
 										<button type="submit" class="btn" onclick="onSubmit(event)">Enviar Mensagem</button>
 										</div>
@@ -567,17 +574,7 @@
 		</section>
 		<!-- End Appointment -->
 		
-		<script>
-        	function onSubmit(e) {
-        	    e.preventDefault(); // Impede o envio do formulário
-        	    grecaptcha.ready(function() {
-        	        grecaptcha.execute('6LcZ9F0qAAAAAFDgXIwRehRWHU890DwqzZrWYz5Q', {action: 'submit'}).then(function(token) {
-        	            document.getElementById('g-recaptcha-response').value = token; // Armazena o token no campo oculto
-        	            document.getElementById('demo-form').submit(); // Envia o formulário
-        	        });
-        	    });
-        	}
-    	</script>
+
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
