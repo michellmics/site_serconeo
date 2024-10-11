@@ -70,7 +70,7 @@
             Dólar: R$ ${taxasDeCambio["Dólar"]}<br>
             Euro: R$ ${taxasDeCambio["Euro"]}<br>
             Libra: R$ ${taxasDeCambio["Libra Esterlina"]}<br>
-            Peso Argentino: R$ ${taxasDeCambio["Peso Argentino"]}<br>
+            Peso Argentino: R$ ${taxasDeCambio["Peso Argentino"]}<br> 
         `;
     })
     .catch(error => console.error('Erro ao buscar taxas de câmbio:', error));
