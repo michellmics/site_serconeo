@@ -591,7 +591,7 @@
 					</div>
 					<div class="col-lg-6 col-md-12 ">
 						<div class="appointment-image">
-							<img src="img/contact-img.png" alt="#">
+							<img src="img/contact-img.jpg" alt="#">
 						</div>
 					</div>
 				</div>
