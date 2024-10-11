@@ -540,9 +540,9 @@
 							    	    <select name="department" class="form-control" required>
 							    	        <option value="" disabled selected>Selecionar departamento</option>
 							    	        <option value="Contábil">Contábil</option>
-							    	        <option value="Folha de pagamento">Folha de Pagamento</option>
+							    	        <option value="Folha de pagamento">Folha de pagamento</option>
 							    	        <option value="Fiscal">Fiscal</option>
-							    	        <option value="Comércio exterior">Comércio Exterior</option>
+							    	        <option value="Comércio exterior">Comércio exterior</option>
 							    	    </select>
 							    	</div>
 								</div>
