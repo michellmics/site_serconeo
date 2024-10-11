@@ -493,13 +493,13 @@
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-									<span style="color: red;">*</span>
+									
 										<input name="email" type="email" placeholder="E-mail" required>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<span style="color: red;">*</span>
+										
 										<input name="phone" type="text" placeholder="Telefone" required>
 									</div>
 								</div>
