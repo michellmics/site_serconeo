@@ -48,12 +48,6 @@
     </head>
     <body>
 
-	<script>
-  		function onSubmit(token) {
-    		document.getElementById("demo-form").submit();
-  		}
-	</script>
-	
 		<!-- Preloader -->
         <div class="preloader">
             <div class="loader">
