@@ -58,8 +58,8 @@
         const taxasDeCambio = {
             "Dólar": (1 / data.rates.USD).toFixed(2), // 1 USD em BRL
             "Euro": (1 / data.rates.EUR).toFixed(2), // 1 EUR em BRL
-            "Libra Esterlina": (1 / data.rates.GBP).toFixed(2), // 1 GBP em BRL
-            "Peso Argentino": (1 / data.rates.ARS).toFixed(2) // 1 ARS em BRL
+            "Libra Esterlina": (1 / data.rates.GBP).toFixed(2) // 1 GBP em BRL
+            
         };
 
         console.log('Valores em Reais:');
@@ -70,7 +70,7 @@
             <p>Dólar: R$ ${taxasDeCambio["Dólar"]}</p>
             <p>Euro: R$ ${taxasDeCambio["Euro"]}</p>
             <p>Libra: R$ ${taxasDeCambio["Libra Esterlina"]}</p>
-            <p>Peso Argentino: R$ ${taxasDeCambio["Peso Argentino"]}</p> 
+            
         `;
     })
     .catch(error => console.error('Erro ao buscar taxas de câmbio:', error));
