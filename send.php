@@ -1,42 +1,29 @@
 <?php
-// Chave secreta do reCAPTCHA (substitua pela sua)
-$secretKey = '6LcZHF4qAAAAAB8x_VRiQoivWpb5kzz_SOy8EwIT';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Sua chave secreta
+    $secretKey = "6LcZHF4qAAAAAB8x_VRiQoivWpb5kzz_SOy8EwIT"; // Substitua pela sua chave secreta
 
-// Verifica se o token do reCAPTCHA foi enviado
-if (isset($_POST['g-recaptcha-response'])) {
-    $token = $_POST['g-recaptcha-response'];
+    // O token enviado pelo reCAPTCHA v2
+    $recaptchaResponse = $_POST['g-recaptcha-response'];
 
-    // Verifica o token com o Google
-    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$token}");
-    $responseKeys = json_decode($response, true);
+    // Verifique se o token foi recebido
+    if (!empty($recaptchaResponse)) {
+        // Verifique o reCAPTCHA fazendo uma solicitação à API do Google
+        $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$recaptchaResponse}");
+        $responseKeys = json_decode($response, true);
 
-    // Exibe o conteúdo retornado pelo Google (para depuração)
-    echo "<pre>";
-    print_r($responseKeys);  // Mostra a resposta completa
-    echo "</pre>";
-
-    // Verifica se o reCAPTCHA foi bem-sucedido
-    if (intval($responseKeys["success"]) === 1) {
-        // reCAPTCHA validado, processe os dados do formulário
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $message = $_POST['message'];
-
-        // Aqui você pode adicionar sua lógica de processamento do formulário
-        echo "Formulário enviado com sucesso!";
-        echo "<br>Nome: $name";
-        echo "<br>Email: $email";
-        echo "<br>Telefone: $phone";
-        echo "<br>Mensagem: $message";
+        // Verifique o sucesso da validação
+        if ($responseKeys["success"]) {
+            // Validação bem-sucedida
+            echo "Formulário enviado com sucesso!";
+            // Aqui você pode processar o formulário
+        } else {
+            // Validação falhou
+            echo "Falha na verificação do reCAPTCHA. Por favor, tente novamente.";
+        }
     } else {
-        // O reCAPTCHA falhou - mostre o código de erro
-        echo "Falha na verificação do reCAPTCHA. Por favor, tente novamente.";
-        echo "<br>Códigos de erro: ";
-        print_r($responseKeys['error-codes']);
+        // reCAPTCHA não foi resolvido
+        echo "Por favor, complete o reCAPTCHA.";
     }
-} else {
-    // Se o token não foi enviado
-    echo "Por favor, complete o reCAPTCHA.";
 }
 ?>
