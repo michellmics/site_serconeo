@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Configurações do e-mail
             $to = "contato@serconeo.com.br"; 
-            $subject = "ATENÇÃO: Contato pelo site da Serconeo";
+            $subject = "ATENCAO: Contato pelo site da Serconeo";
             $body = "Nome: $name\n";
             $body .= "E-mail: $email\n";
             $body .= "Telefone: $phone\n";
