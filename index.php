@@ -242,7 +242,7 @@
 										<span>Cotações</span>
 										<h4>Moedas Estrangeiras</h4>
 										<div id="taxas-cambio"></div>
-										<!--  <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p> -->
+										 <!--  <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p> -->
 										
 									</div>
 								</div>
