@@ -502,16 +502,15 @@
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current">Departmento</span>
-											<ul class="list" name="department">
-												<li data-value="1" class="option selected ">Contábil</li>
-												<li data-value="2" class="option">Folha de Pagamento</li>
-												<li data-value="3" class="option">Fiscal</li>
-												<li data-value="5" class="option">Comércio Exterior</li>
-											</ul>
-										</div>
-									</div>
+							    	<div class="form-group">
+							    	    <select name="department" class="form-control" required>
+							    	        <option value="" disabled selected>Selecionar Departamento</option>
+							    	        <option value="Contábil">Contábil</option>
+							    	        <option value="Folha de Pagamento">Folha de Pagamento</option>
+							    	        <option value="Fiscal">Fiscal</option>
+							    	        <option value="Comércio Exterior">Comércio Exterior</option>
+							    	    </select>
+							    	</div>
 								</div>
 								
 							
