@@ -488,17 +488,19 @@
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="name" type="text" placeholder="Nome">
+										<input name="name" type="text" placeholder="Nome" required>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="email" type="email" placeholder="E-mail">
+									<label for="email">E-mail <span style="color: red;">*</span></label>
+										<input name="email" type="email" placeholder="E-mail" required>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="phone" type="text" placeholder="Telefone">
+										<label for="email">E-Telefone <span style="color: red;">*</span></label>
+										<input name="phone" type="text" placeholder="Telefone" required>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
