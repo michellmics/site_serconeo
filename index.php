@@ -241,7 +241,7 @@
 									<div class="single-content">
 										<span>Cotações</span>
 										<h4>Moedas Estrangeiras</h4>
-										<div id="taxas-cambio"></div>
+										<p><div id="taxas-cambio"></div></p>
 										<!--  <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p> -->
 										<a href="https://www.exchangerate.com/" target="_blank">Leia Mais<i class="fa fa-long-arrow-right"></i></a>
 									</div>
