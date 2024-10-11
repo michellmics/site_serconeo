@@ -231,7 +231,22 @@
 								</div>
 							</div>
 						</div>
-					
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-prescription"></i>
+									</div>
+									<div class="single-content">
+										<span>Contatos</span>
+										<h4>E-mail e Telefones</h4>
+										<p>+55 (41) 3044-6383 +55 (41) 3044-6382 E-mail: contato@serconeo.com.br</p>
+										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="col-lg-4 col-md-12 col-12">
 							<!-- single-schedule -->
 							<div class="single-schedule last">
