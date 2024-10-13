@@ -21,10 +21,8 @@ class LoginSystem extends SITE_ADMIN
 
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
             
-            $hashPassword = password_hash($password, PASSWORD_DEFAULT);
-
             // Se o usuário for encontrado e a senha for válida
-            if ($user && password_verify($hashPassword, $user['USA_DCSENHA'])) {
+            if ($user && password_verify($password, $user['USA_DCSENHA'])) {
                 $_SESSION['user_id'] = $user['USA_IDUSERADMIN']; // Armazena o ID na sessão
                 header("Location: dashboard.php"); // Redireciona após login bem-sucedido
                 exit();
