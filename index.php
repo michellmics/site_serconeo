@@ -104,7 +104,7 @@
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
 							<ul class="top-link">
-								<li><a href="https://maps.app.goo.gl/1fPQa7EzagpK3gs39" target="_blank">Rua Brigadeiro Franco,  4171, Rebouças  CEP 80220-100 - Curitiba - PR</a></li>
+								<li><a href="https://maps.app.goo.gl/1fPQa7EzagpK3gs39" target="_blank">Rua Brigadeiro Franco,  4171, Rebouças - Curitiba - PR</a></li>
 								<!-- <li><a href="#">Serviços</a></li> -->
 								<!-- <li><a href="#">Contact</a></li> -->
 								<!-- <li><a href="#">FAQ</a></li> -->
