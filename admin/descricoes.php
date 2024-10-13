@@ -73,7 +73,7 @@
               </div>
               <!-- FIM BLOCO 1 -->
 
-              <!-- INI BLOCO 1 -->
+              <!-- INI BLOCO 2 -->
               <div class="box box-primary">
                 <div class="box-header">
                   <h3 class="box-title">Quick Example</h3>
@@ -95,7 +95,7 @@
                   </div>
                 </form>
               </div>
-              <!-- FIM BLOCO 1 -->
+              <!-- FIM BLOCO 2 -->
 
               <!-- Form Element sizes -->
               <div class="box box-success">
@@ -225,27 +225,29 @@
             <!-- right column -->
             <div class="col-md-6">
               <!-- general form elements disabled -->
-              <div class="box box-warning">
+              <!-- INI BLOCO 1 -->
+              <div class="box box-primary">
                 <div class="box-header">
-                  <h3 class="box-title">General Elements</h3>
+                  <h3 class="box-title">Quick Example</h3>
                 </div><!-- /.box-header -->
-                <div class="box-body">
-                  <form role="form">
-                    <!-- text input -->
-                    <div class="form-group">
-                      <label>Text</label>
-                      <input type="text" class="form-control" placeholder="Enter ..."/>
-                    </div>
-                    <div class="form-group">
-                      <label>Text Disabled</label>
-                      <input type="text" class="form-control" placeholder="Enter ..." disabled/>
-                    </div>
-
-                    <!-- textarea -->
-                    <div class="form-group">
+                <!-- form start -->
+                <form role="form">
+                  <!-- textarea -->
+                  <div class="form-group">
+                    <label>Text</label>
+                    <input type="text" class="form-control" placeholder="Enter ..."/>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form-group">
                       <label>Textarea</label>
                       <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                    </div>
+                  </div>
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <!-- FIM BLOCO 1 -->
                     
 
                     <!-- input states -->
