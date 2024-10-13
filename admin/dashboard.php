@@ -316,7 +316,7 @@
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">BARRA DE NAVEGAÇÃO</li>
+            <li class="header"><?php echo htmlspecialchars($siteAdmin->ARRAY_SITEINFO["SBI_DCDOMAINSITE"]); ?></li>
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-edit"></i> <span>Descrições</span>
