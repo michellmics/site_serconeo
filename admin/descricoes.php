@@ -64,11 +64,43 @@
                         <input type="text" class="form-control">
                       </div><!-- /input-group -->
                     </div><!-- /.col-lg-6 -->
-                  </div><!-- /.row -->
-
-                  
+                  </div><!-- /.row -->              
 
         </div><!--/.col (left) -->
+
+
+                    <!-- right column -->
+            <div class="col-md-6">
+              <!-- general form elements disabled -->
+              <div class="box box-warning">
+                <div class="box-header">
+                  <h3 class="box-title">General Elements</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <form role="form">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Text</label>
+                      <input type="text" class="form-control" placeholder="Enter ..."/>
+                    </div>
+                    <div class="form-group">
+                      <label>Text Disabled</label>
+                      <input type="text" class="form-control" placeholder="Enter ..." disabled/>
+                    </div>
+
+                    <!-- textarea -->
+                    <div class="form-group">
+                      <label>Textarea</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                    </div>
+                    
+
+                    
+
+                  </form>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!--/.col (right) -->
 
 
 
