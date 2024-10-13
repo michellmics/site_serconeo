@@ -29,7 +29,7 @@
      
 
       <!-- Right side column. Contains the navbar and content of the page -->
-      <div class="content-wrapper">
+      <div class="scontent-wrapper">
         <!-- Content Header (Page header) -->
       
 
@@ -43,10 +43,10 @@
 
 
 
-        <section class="content2">
+        <section class="content">
           <div class="row">
             <!-- left column -->
-            <div class="col-md-6d">
+            <div class="col-md-6">
               <!-- general form elements -->
               <div class="box box-primary">
                 <div class="box-header">
