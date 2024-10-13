@@ -39,7 +39,7 @@
 	
 
         public function getSiteInfo()
-        {           
+        {          
                 // Verifica se a conexão já foi estabelecida
                 if(!$this->pdo){$this->conexao();}
             
