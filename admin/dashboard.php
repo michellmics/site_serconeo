@@ -2,7 +2,7 @@
   include_once 'objetos.php';
 
   echo "<pre>";
-print_r($_ENV);
+print_r($_SERVER);
 echo "</pre>";
 die();
 
