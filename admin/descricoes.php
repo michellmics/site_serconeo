@@ -31,17 +31,7 @@
       <!-- Right side column. Contains the navbar and content of the page -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
-        <section class="content-header">
-          <h1>
-            General Form Elements
-            <small>Preview</small>
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">Forms</a></li>
-            <li class="active">General Elements</li>
-          </ol>
-        </section>
+      
 
         <!-- Main content -->
         <section class="content">
@@ -231,10 +221,7 @@
                       <label>Textarea</label>
                       <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                     </div>
-                    <div class="form-group">
-                      <label>Textarea Disabled</label>
-                      <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
-                    </div>
+                    
 
                     <!-- input states -->
                     <div class="form-group has-success">
