@@ -3,6 +3,9 @@ include_once 'objetos.php'; // Carrega a classe de conexão e objetos
 
 session_start(); // Inicia a sessão para armazenar dados do usuário
 
+echo "sessao: ";
+echo $_SESSION['user_id'];
+
 class LoginSystem extends SITE_ADMIN
 {
     public function validateUser($email, $password)
