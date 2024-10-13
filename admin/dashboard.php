@@ -1,5 +1,14 @@
 <?php
+  header("Content-type: application/json"); 
+
   include 'objetos.php';
+
+  $siteAdmin = new SITE_ADMIN();
+
+  var_dump($siteAdmin->ARRAY_SITEINFO);
+  die();
+
+
 ?>
 
 <!DOCTYPE html>
