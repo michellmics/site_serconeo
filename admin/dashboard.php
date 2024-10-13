@@ -14,6 +14,16 @@
   $siteAdmin->getSiteInfo(); 
   $siteAdmin->getUserInfo();
 
+  //defin usuario
+  if($siteAdmin->ARRAY_USERINFO["USA_DCSEXO"] == "masculino")
+  {
+    $imgProfile = "dist/img/avatar5.png";
+  }
+  else
+      {
+        $imgProfile = "dist/img/avatar3.png";
+      }
+
 ?>
 
 <!DOCTYPE html>
@@ -253,13 +263,13 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="dist/img/avatar5.png" class="user-image" alt="User Image"/>
+                  <img src=<? echo $imgProfile ?> class="user-image" alt="User Image"/>
                   <span class="hidden-xs"><?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_NMNOME"]); ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="dist/img/avatar5.png" class="img-circle" alt="User Image" />
+                    <img src=<? echo $imgProfile ?> class="img-circle" alt="User Image" />
                     <p>
                     <?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_NMNOME"]); ?> - ADM
                       <small><?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_DCEMAIL"]); ?></small>
@@ -268,13 +278,13 @@
                   <!-- Menu Body -->
                   <li class="user-body">
                     <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
+                       <!--<a href="#">Followers</a>-->
                     </div>
                     <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
+                       <!--<a href="#">Sales</a>-->
                     </div>
                     <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
+                       <!--<a href="#">Friends</a>-->
                     </div>
                   </li>
                   <!-- Menu Footer-->

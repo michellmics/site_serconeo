@@ -67,7 +67,8 @@
             try{           
                 $sql = "SELECT USA_IDUSERADMIN,                                  
                                 USA_DCEMAIL, 
-                                USA_NMNOME
+                                USA_NMNOME,
+                                USA_DCSEXO
                                 FROM USA_USERADMIN";
 
                 $stmt = $this->pdo->prepare($sql);
