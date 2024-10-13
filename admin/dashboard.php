@@ -6,8 +6,8 @@
   $siteAdmin = new SITE_ADMIN();
   $result = $siteAdmin->getSiteInfo();
 
-  //var_dump($siteAdmin->ARRAY_SITEINFO);
-  var_dump($result);
+  var_dump($siteAdmin->ARRAY_SITEINFO["SBI_DCSITE"]);
+ 
   die();
 
 
