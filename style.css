@@ -113,7 +113,7 @@ html {
 	float: left;
 	font-size: 13px;
 	width: 100%;
-	text-transform: capitalize;
+	text-transform: none;
 }
 .pro-features li {
 	color: #333;
@@ -348,7 +348,7 @@ html {
 	color: #2C2D3F;
 	font-size: 14px;
 	font-weight: 500;
-	text-transform: capitalize;
+	text-transform: none;
 	padding: 25px 12px;
 	position: relative;
 	display: inline-block;
@@ -440,7 +440,7 @@ html {
 }
 .header .single-widget p {
 	margin-bottom: 5px;
-	text-transform: capitalize;
+	text-transform: none;
 }
 .header .single-widget.btn{
 	margin-left:0;
@@ -484,7 +484,7 @@ html {
 	color: #666;
 	display: block;
 	font-weight: 400;
-	text-transform: capitalize;
+	text-transform: none;
 	background: transparent;
 	-webkit-transition:all 0.2s ease;
 	-moz-transition:all 0.2s ease;
@@ -1679,7 +1679,7 @@ html {
 .pricing-table .table-list li {
 	position: relative;
 	color: #666;
-	text-transform: capitalize;
+	text-transform: none;
 	margin-bottom: 18px;
 	padding-right: 32px;
 }
@@ -1858,7 +1858,7 @@ html {
 }
 .team .t-bottom h2 {
 	font-size: 18px;
-	text-transform: capitalize;
+	text-transform: none;
 	font-weight: 500;
 	color: #2C2D3F;
 }
@@ -2079,7 +2079,7 @@ html {
 }
 .blog .single-news .news-content p {
 	font-weight: 400;
-	text-transform: capitalize;
+	text-transform: none;
 	font-size: 13px;
 	letter-spacing: 0px;
 	line-height: 23px;
@@ -2117,7 +2117,7 @@ html {
 	position: relative;
 	font-size: 18px;
 	font-weight: 600;
-	text-transform: capitalize;
+	text-transform: none;
 	margin-bottom: 30px;
 	display: block;
 	background: #fff;
@@ -2276,7 +2276,7 @@ html {
 	background: #fff;
 	color: #333;
 	padding: 8px 14px;
-	text-transform: capitalize;
+	text-transform: none;
 	border-radius: 0;
 	font-size: 13px;
 	background: #F6F7FB;
@@ -2483,7 +2483,7 @@ html {
 }
 .news-single .blog-comments h2 {
 	text-align: left;
-	text-transform: capitalize;
+	text-transform: none;
 	font-size: 18px;
 	color: #252525;
 	margin-bottom: 20px;
@@ -2579,7 +2579,7 @@ html {
 	font-size: 13px;
 }
 .news-single .single-comments a {
-	text-transform: capitalize;
+	text-transform: none;
 	font-size: 13px;
 	font-weight: 400;
 	color: #fff;
@@ -2625,7 +2625,7 @@ html {
 	font-size: 18px;
 	color: #353535;
 	margin-bottom: 20px;
-	text-transform: capitalize;
+	text-transform: none;
 }
 .news-single .form {
 }
@@ -2764,7 +2764,7 @@ html {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #eee;
-	text-transform: capitalize;
+	text-transform: none;
 	padding: 0px 18px;
 	color: #555;
 	font-size: 14px;
@@ -2786,7 +2786,7 @@ html {
 	height: 50px;
 	line-height: 50px;
 	border: 1px solid #eee;
-	text-transform: capitalize;
+	text-transform: none;
 	padding: 0px 18px;
 	color: #999;
 	font-size: 14px;
@@ -2889,7 +2889,7 @@ html {
 	color: #333;
 	font-weight: 600;
 	line-height: 27px;
-	text-transform: capitalize;
+	text-transform: none;
 	margin-bottom: 12px;
 	padding-bottom: 20px;
 	text-align: left;
@@ -2928,7 +2928,7 @@ html {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #eee;
-	text-transform: capitalize;
+	text-transform: none;
 	padding: 0px 18px;
 	color: #555;
 	font-size: 14px;
@@ -3044,7 +3044,7 @@ html {
 	color: #333;
 	font-weight: 600;
 	line-height: 27px;
-	text-transform: capitalize;
+	text-transform: none;
 	margin-bottom: 12px;
 	padding-bottom: 20px;
 	text-align: left;
@@ -3083,7 +3083,7 @@ html {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #eee;
-	text-transform: capitalize;
+	text-transform: none;
 	padding: 0px 18px;
 	color: #555;
 	font-size: 14px;
@@ -3271,7 +3271,7 @@ html {
 	color: #333;
 	font-weight: 600;
 	line-height: 27px;
-	text-transform: capitalize;
+	text-transform: none;
 	margin-bottom: 12px;
 	padding-bottom: 20px;
 	text-align: left;
@@ -3302,7 +3302,7 @@ html {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #eee;
-	text-transform: capitalize;
+	text-transform: none;
 	padding: 0px 18px;
 	color: #555;
 	font-size: 14px;
@@ -3313,7 +3313,7 @@ html {
 	width: 100%;
 	height:100px;
 	border: 1px solid #eee;
-	text-transform: capitalize;
+	text-transform: none;
 	padding:18px;
 	color: #555;
 	font-size: 14px;
@@ -4045,7 +4045,7 @@ html {
 .footer .single-footer.f-link li a {
 	display: block;
 	color: #fff;
-	text-transform: capitalize;
+	text-transform: none;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
