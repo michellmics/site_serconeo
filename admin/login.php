@@ -31,7 +31,7 @@ class LoginSystem extends SITE_ADMIN
             }
         } catch (PDOException $e) {  
             echo "Erro: " . $e->getMessage();
-        }
+        } 
     }
 }
 
