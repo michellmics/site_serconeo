@@ -39,16 +39,11 @@
 	
 
         public function getSiteInfo()
-        {
-            // Consulta o texto para a seção "feautes"
-           
+        {           
                 // Verifica se a conexão já foi estabelecida
-                if (!$this->pdo) {
-                    $this->conexao();
-                }
+                if(!$this->pdo){$this->conexao();}
             
-            try {
-           
+            try{           
                 $sql = "SELECT SBI_DCSITE, 
                                 SBI_DCDOMAINSITE, 
                                 SBI_DTRENEW_REGISTER_DOMAIN,
@@ -59,11 +54,27 @@
                 $stmt->execute();
                 $result = $stmt->fetch(PDO::FETCH_ASSOC);
             } catch (PDOException $e) {
-                // Em caso de erro, retorna a mensagem do erro
                 return ["error" => $e->getMessage()];
             }
-                return "tese";
-            
-            //$this->ARRAY_SITEINFO = $this->stmtToArray($stmt);            
+            $this->ARRAY_SITEINFO = $this->stmtToArray($stmt);            
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     }
