@@ -56,7 +56,8 @@
             } catch (PDOException $e) {
                 return ["error" => $e->getMessage()];
             }
-            $this->ARRAY_SITEINFO = $this->stmtToArray($result);            
+            return $result;
+            //$this->ARRAY_SITEINFO = $this->stmtToArray($stmt);            
         }
 
 
@@ -76,5 +77,5 @@
 
 
 
-
+        
     }
