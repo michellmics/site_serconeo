@@ -399,7 +399,7 @@
 							<h2>Você têm alguma dúvida?</h2>
 							<p>Entre em contato conosco, teremos prazer em lhe atender.</p>
 							<div class="button">
-								<a href="#appointment" class="btn">Mensagem</a>
+								<a href="#contato" class="btn">Mensagem</a>
 								<a href="#servicos" class="btn second">Continue Lendo<i class="fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
