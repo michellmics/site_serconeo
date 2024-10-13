@@ -43,7 +43,7 @@
 
 
 
-        <section class="content">
+        <section class="content2">
           <div class="row">
             <!-- left column -->
             <div class="col-md-6">
