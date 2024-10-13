@@ -1,6 +1,13 @@
 <?php
   include_once 'objetos.php';
 
+  // Verifica se a sessão do usuário está ativa
+  if (!isset($_SESSION['user_id'])) {
+  // Se não estiver logado, redireciona para a página de login
+  header("Location: login.php");
+  exit();
+
+
   $siteAdmin = new SITE_ADMIN();
   $result = $siteAdmin->getSiteInfo();
 
