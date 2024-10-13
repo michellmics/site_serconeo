@@ -1,11 +1,17 @@
 <?php
   include_once 'objetos.php';
-/*
+
+  echo "<pre>";
+print_r($_ENV);
+echo "</pre>";
+die();
+
+  /*
   session_start(); // Inicia a sessão
   // Verifica se a sessão do usuário está ativa
   if (!isset($_SESSION['user_id'])) {
   // Se não estiver logado, redireciona para a página de login
-  header("Location: login.php");
+  header("Location: index.php");
   exit();
 */
 
