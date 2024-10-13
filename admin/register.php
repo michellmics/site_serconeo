@@ -10,7 +10,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>AdminLTE 2 | Registration Page</title>
+    <title>Administração - Registro de Usuário</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -31,7 +31,7 @@
   <body class="register-page">
     <div class="register-box">
       <div class="register-logo">
-        <a href="index2.html"><b>Administração</b>LTE</a>
+        <a href="index2.html"><b><?php echo htmlspecialchars($siteAdmin->ARRAY_SITEINFO["SBI_DCSITE"]); ?></b></a>
       </div>
 
       <div class="register-box-body">
