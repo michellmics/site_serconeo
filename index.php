@@ -332,7 +332,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>A Empresa</h2>
+							<h2 style="text-transform: none;">A empresa</h2>
 							<img src="img/section-img.png" alt="#">
 							<p>Nossa política de qualidade é prestar serviços aos nossos clientes, visando satisfazer e superar suas necessidades com qualidade e confiabilidade.</p>
 						</div>
@@ -416,7 +416,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Disponibilizamos uma ampla gama de serviços para atender às suas necessidades</h2>
+							<h2 style="text-transform: none;">Disponibilizamos uma ampla gama de serviços para atender às suas necessidades</h2>
 							<img src="img/section-img.png" alt="#">
 							<p>Incluindo regularização de empresas, assessoria empresarial, gestão de impostos e terceirização da folha de pagamento, sempre com foco em eficiência e conformidade.</p>
 						</div>
@@ -491,7 +491,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Estamos sempre à disposição para lhe auxiliar. Agende uma reunião conosco!</h2>
+							<h2 style="text-transform: none;">Estamos sempre à disposição para lhe auxiliar. Agende uma reunião conosco!</h2>
 							<img src="img/section-img.png" alt="#">
 							<p>E descubra como podemos ajudar a impulsionar o seu negócio com soluções personalizadas e expertise em contabilidade.</p>
 						</div>
