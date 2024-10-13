@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>AdminLTE 2 | Dashboard</title>
+    <title>Dashboard - Administração</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -34,7 +34,7 @@
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo"><b>Admin</b>LTE</a>
+        <a href="index.html" class="logo"><b>Serconeo</b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
@@ -301,10 +301,10 @@
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">BARRA DE NAVEGAÇÃO</li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-edit"></i> <span>Forms</span>
+                <i class="fa fa-edit"></i> <span>Descrições</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -314,15 +314,10 @@
               </ul>
             </li>
             
-            <li>
-              <a href="pages/mailbox/mailbox.html">
-                <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                <small class="label pull-right bg-yellow">12</small>
-              </a>
-            </li>
+            
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-folder"></i> <span>Examples</span>
+                <i class="fa fa-folder"></i> <span>Imagens do Site</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -335,7 +330,12 @@
                 <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
               </ul>
             </li>
-            
+            <li>
+              <a href="pages/mailbox/mailbox.html">
+                <i class="fa fa-envelope"></i> <span>Abertura de chamado</span>
+                <small class="label pull-right bg-yellow">12</small>
+              </a>
+            </li>
             
           </ul>
         </section>
