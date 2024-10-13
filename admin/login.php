@@ -14,7 +14,7 @@ class LoginSystem extends SITE_ADMIN
             }
 
             // Prepara a consulta SQL para verificar o usuário
-            $sql = "SELECT USA_IDUSERADMIN, USA_DCSENHA FROM USA_USERADMIN WHERE USA_DCEMAIL = :email";
+            $sql = "SELECT USA_IDUSERADMIN, USA_DCSENHA, USA_DCEMAIL FROM USA_USERADMIN WHERE USA_DCEMAIL = :email";
             $stmt = $this->pdo->prepare($sql);
             $stmt->bindParam(':email', $email, PDO::PARAM_STR);
             $stmt->execute();
@@ -27,7 +27,7 @@ class LoginSystem extends SITE_ADMIN
                 header("Location: dashboard.php"); // Redireciona após login bem-sucedido
                 exit();
             } else {
-                echo "Usuário ou senha incorretos."; echo $user['USA_DCSENHA']; var_dump($email);
+                echo "Usuário ou senha incorretos."; echo $password;
             }
         } catch (PDOException $e) {
             echo "Erro: " . $e->getMessage();
