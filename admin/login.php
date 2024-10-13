@@ -27,7 +27,7 @@ class LoginSystem extends SITE_ADMIN
                 header("Location: dashboard.php"); // Redireciona após login bem-sucedido
                 exit();
             } else {
-                echo "Usuário ou senha incorretos."; echo $password; echo "-"; echo $user['USA_DCSENHA']; 
+                echo "Usuário ou senha incorretos."; echo $password; echo "-"; echo $user['USA_DCSENHA'];  
             }
         } catch (PDOException $e) {  
             echo "Erro: " . $e->getMessage();
