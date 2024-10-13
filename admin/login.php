@@ -29,7 +29,7 @@ class LoginSystem extends SITE_ADMIN
             } else {
                 echo "Usuário ou senha incorretos."; echo $password; echo "-"; echo $user['USA_DCSENHA']; 
             }
-        } catch (PDOException $e) {
+        } catch (PDOException $e) {  
             echo "Erro: " . $e->getMessage();
         }
     }
