@@ -1,19 +1,21 @@
 <?php
   include_once 'objetos.php';
-  session_start(); // Inicia a sessão
-  echo "<pre>";
-print_r($_SESSION);
-echo "</pre>";
-die();
-
   /*
   session_start(); // Inicia a sessão
+  echo "<pre>";
+  print_r($_SESSION);
+  echo "</pre>";
+  die();
+  */
+  
+  session_start(); // Inicia a sessão
   // Verifica se a sessão do usuário está ativa
-  if (!isset($_SESSION['user_id'])) {
-  // Se não estiver logado, redireciona para a página de login
-  header("Location: index.php");
-  exit();
-*/
+  if (!isset($_SESSION['user_id'])) 
+  {
+    header("Location: index.php");
+    exit();
+  }
+
 
   $siteAdmin = new SITE_ADMIN();
   $result = $siteAdmin->getSiteInfo();
