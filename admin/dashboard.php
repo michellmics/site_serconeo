@@ -280,10 +280,10 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                      <!-- <a href="#" class="btn btn-default btn-flat">Profile</a>-->
                     </div>
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="logoff.php" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -304,7 +304,7 @@
             <div class="pull-left info">
               <p><?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_NMNOME"]); ?></p>
 
-              <a href="logoff.php"><i class="fa fa-circle text-danger"></i> Logoff</a>
+              <a href="#"><i class="fa fa-circle text-success"></i>online</a>
             </div>
           </div>
           <!-- search form -->
