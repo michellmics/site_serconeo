@@ -6,7 +6,7 @@
   $siteAdmin = new SITE_ADMIN();
   $result = $siteAdmin->getSiteInfo();
 
-  var_dump($sresult);
+  var_dump($result);
   die();
 
 
