@@ -24,38 +24,41 @@
     <![endif]-->
   </head>
   <body class="skin-blue">
-   
+    <div class="wrapper">
       
-     <!-- radio -->
-     <div class="form-group">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                          Option one is this and that&mdash;be sure to include why it's great
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                          Option two can be something else and selecting it will deselect option one
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled/>
-                          Option three is disabled
-                        </label>
-                      </div>
-                    </div>
+     
 
+      <!-- Right side column. Contains the navbar and content of the page -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
       
+
+        <!-- Main content  INI -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Main content FIM -->
+
+      </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
           <b>Version</b> 2.0
         </div>
         <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
       </footer>
-   
+    </div><!-- ./wrapper -->
 
     <!-- jQuery 2.1.3 -->
     <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
