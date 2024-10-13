@@ -52,19 +52,19 @@
               <!-- INI BLOCO 1 -->
               <div class="box box-primary">
                 <div class="box-header">
-                  <h3 class="box-title">Quick Example</h3>
+                  <h3 class="box-title">A Empresa</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 <form role="form">
                   <!-- textarea -->
                   <div class="form-group">
-                    <label>Text</label>
-                    <input type="text" class="form-control" placeholder="Enter ..."/>
+                    <label>Título</label>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo">teste</input>
                   </div>
                   <!-- textarea -->
                   <div class="form-group">
-                      <label>Textarea</label>
-                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                      <label>Descrição</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..." name="descricao">teste</textarea>
                   </div>
                   <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -224,8 +224,8 @@
             </div><!--/.col (left) -->
             <!-- right column -->
             <div class="col-md-6">
-              <!-- general form elements disabled -->
-              <!-- INI BLOCO 1 -->
+              
+              <!-- INI BLOCO 3 -->
               <div class="box box-primary">
                 <div class="box-header">
                   <h3 class="box-title">Quick Example</h3>
@@ -247,7 +247,31 @@
                   </div>
                 </form>
               </div>
-              <!-- FIM BLOCO 1 -->
+              <!-- FIM BLOCO 3 -->
+
+              <!-- INI BLOCO 4 -->
+              <div class="box box-primary">
+                <div class="box-header">
+                  <h3 class="box-title">Quick Example</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form">
+                  <!-- textarea -->
+                  <div class="form-group">
+                    <label>Text</label>
+                    <input type="text" class="form-control" placeholder="Enter ..."/>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form-group">
+                      <label>Textarea</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                  </div>
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <!-- FIM BLOCO 4 -->
                     
 
                     <!-- input states -->
