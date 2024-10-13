@@ -1858,7 +1858,7 @@ html {
 }
 .team .t-bottom h2 {
 	font-size: 18px;
-	text-transform: capitalize;
+	text-transform: none;
 	font-weight: 500;
 	color: #2C2D3F;
 }
@@ -2483,7 +2483,7 @@ html {
 }
 .news-single .blog-comments h2 {
 	text-align: left;
-	text-transform: capitalize;
+	text-transform: none;
 	font-size: 18px;
 	color: #252525;
 	margin-bottom: 20px;
@@ -2625,7 +2625,7 @@ html {
 	font-size: 18px;
 	color: #353535;
 	margin-bottom: 20px;
-	text-transform: capitalize;
+	text-transform: none;
 }
 .news-single .form {
 }
@@ -2889,7 +2889,7 @@ html {
 	color: #333;
 	font-weight: 600;
 	line-height: 27px;
-	text-transform: capitalize;
+	text-transform: none;
 	margin-bottom: 12px;
 	padding-bottom: 20px;
 	text-align: left;
@@ -3044,7 +3044,7 @@ html {
 	color: #333;
 	font-weight: 600;
 	line-height: 27px;
-	text-transform: capitalize;
+	text-transform: none;
 	margin-bottom: 12px;
 	padding-bottom: 20px;
 	text-align: left;
@@ -3271,7 +3271,7 @@ html {
 	color: #333;
 	font-weight: 600;
 	line-height: 27px;
-	text-transform: capitalize;
+	text-transform: none;
 	margin-bottom: 12px;
 	padding-bottom: 20px;
 	text-align: left;
@@ -4058,10 +4058,10 @@ html {
 	color:#fff;
 	font-size:20px;
 	font-weight:600;
-	text-transform:capitalize;
+	text-transform:none;
 	margin-bottom:40px;
 	padding-bottom:20px;
-	text-transform:capitalize;
+	text-transform:none;
 	position:relative;
 }
 .footer .single-footer h2::before{
