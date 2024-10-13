@@ -2,9 +2,10 @@
   include_once 'objetos.php';
   
   session_start(); 
-  echo $_SESSION['user_id'];
-  die();
+ // echo $_SESSION['user_id'];
+ // die();
   define('SESSION_TIMEOUT', 1800); // 30 minutos
+ 
   if (!isset($_SESSION['user_id'])) 
   {
     header("Location: index.php");
