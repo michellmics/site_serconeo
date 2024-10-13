@@ -1,6 +1,4 @@
 <?php
-  header("Content-type: application/json"); 
-
   include_once 'objetos.php';
 
   $siteAdmin = new SITE_ADMIN();
