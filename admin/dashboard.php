@@ -2,8 +2,6 @@
   include_once 'objetos.php';
   
   session_start(); 
- // echo $_SESSION['user_id'];
- // die();
   define('SESSION_TIMEOUT', 1800); // 30 minutos
  
   if (!isset($_SESSION['user_id'])) 
@@ -306,7 +304,7 @@
             <div class="pull-left info">
               <p><?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_NMNOME"]); ?></p>
 
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+              <a href="logoff.php"><i class="fa fa-circle text-danger"></i> Logoff</a>
             </div>
           </div>
           <!-- search form -->
