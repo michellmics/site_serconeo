@@ -28,7 +28,7 @@
                             SBI_DCDOMAINSITE, 
                             SBI_DTRENEW_REGISTER_DOMAIN,
                             SBI_STSITE
-                            FROM textos_site WHERE secao = 'feautes'";
+                            FROM SBI_SITEBASEINFO";
             $stmt = $pdo->prepare($sql);
             $stmt->execute();
             $this->ARRAY_SITEINFO = $stmt->fetch(PDO::FETCH_ASSOC);
