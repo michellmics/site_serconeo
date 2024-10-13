@@ -4,6 +4,7 @@
   include 'objetos.php';
 
   $siteAdmin = new SITE_ADMIN();
+  $siteAdmin->getSiteInfo();
 
   var_dump($siteAdmin->ARRAY_SITEINFO);
   die();
