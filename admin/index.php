@@ -4,6 +4,9 @@
   $siteAdmin = new SITE_ADMIN();
   $result = $siteAdmin->getSiteInfo();
 
+echo "sessao: ";
+echo $_SESSION['user_id'];
+
 ?>
 
 <!DOCTYPE html>
