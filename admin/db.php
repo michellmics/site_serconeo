@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
 $dbname = 'serconeo_dbprod';
-$user = 'dbprod';
+$user = 'serconeo_dbprod';
 $pass = 'dbprodserconeo';
 
 try {
