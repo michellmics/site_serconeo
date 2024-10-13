@@ -30,11 +30,11 @@
         <p class="login-box-msg">Acesso a área administrativa</p>
         <form action="login.php" method="post">
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" id="email" placeholder="email"/>
+            <input type="text" class="form-control" id="email" placeholder="E-mail" name="email"/>
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control" id="password" placeholder="password"/>
+            <input type="password" class="form-control" id="password" placeholder="password" name="password"/>
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
           <div class="row">
