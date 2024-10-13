@@ -371,6 +371,20 @@
         <!-- Main content INI-->
         
 
+      <!-- textarea -->
+      <div class="form-group">
+      <label>Textarea</label>
+        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+      </div>
+      <div class="form-group">
+        <label>Textarea Disabled</label>
+        <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
+      </div>
+
+
+
+
+
         <!-- Main content FIM -->
 
 
