@@ -24,7 +24,11 @@
         public function getSiteInfo()
         {
             // Consulta o texto para a seção "feautes"
-            $sql = "SELECT titulo, conteudo, imagem FROM textos_site WHERE secao = 'feautes'";
+            $sql = "SELECT SBI_DCSITE, 
+                            SBI_DCDOMAINSITE, 
+                            SBI_DTRENEW_REGISTER_DOMAIN,
+                            SBI_STSITE
+                            FROM textos_site WHERE secao = 'feautes'";
             $stmt = $pdo->prepare($sql);
             $stmt->execute();
             $this->ARRAY_SITEINFO = $stmt->fetch(PDO::FETCH_ASSOC);
