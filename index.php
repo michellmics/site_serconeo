@@ -281,7 +281,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Uma grande parceria para um resultado de sucesso.</h2>
+							<h2 style="text-transform: none;">Uma grande parceria para um resultado de sucesso</h2>
 							<img src="img/section-img.png" alt="#">
 							<p>Descubra os passos essenciais para alcançar o sucesso e conte com nosso apoio especializado em cada etapa do seu percurso.</p>
 						</div>
