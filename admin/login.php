@@ -25,7 +25,6 @@ class LoginSystem extends SITE_ADMIN
             if ($user && password_verify($password, $user['USA_DCSENHA'])) {
                 $_SESSION['user_id'] = $user['USA_IDUSERADMIN']; // Armazena o ID na sessão
                 header("Location: dashboard.php"); // Redireciona após login bem-sucedido
-                session_start();
                 exit();
             } else {
                 echo "Usuário o senha incorretos."; 
