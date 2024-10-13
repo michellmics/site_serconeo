@@ -31,7 +31,7 @@
                             FROM SBI_SITEBASEINFO";
             $stmt = $pdo->prepare($sql);
             $stmt->execute();
-            $stmt->fetch(PDO::FETCH_ASSOC);
+            //$stmt->fetch(PDO::FETCH_ASSOC);
             
             $this->ARRAY_SITEINFO = $this->stmtToArray($stmt);            
         }
