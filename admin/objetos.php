@@ -19,7 +19,7 @@
 
             try {
                 $this->pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {
                 die("Erro na conexão: " . $e->getMessage());
             }
@@ -41,7 +41,12 @@
         public function getSiteInfo()
         {
             // Consulta o texto para a seção "feautes"
-
+            try {
+                // Verifica se a conexão já foi estabelecida
+                if (!$this->pdo) {
+                    $this->conexao();
+                }
+            
             try {
            
                 $sql = "SELECT SBI_DCSITE, 
@@ -50,7 +55,6 @@
                                 SBI_STSITE
                                 FROM SBI_SITEBASEINFO";
 
-                $this->conexao();
                 $stmt = $this->pdo->prepare($sql);
                 $stmt->execute();
                 $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -68,3 +72,4 @@
         
     }
     
+    ?>
