@@ -29,8 +29,8 @@ class LoginSystem extends SITE_ADMIN
                 exit();
             } else 
                 {
-                    $_SESSION = [];
-                    session_destroy();
+                   // $_SESSION = [];
+                   // session_destroy();
                     echo "Usuário o senha incorretos."; 
                 }
         } catch (PDOException $e) {  
