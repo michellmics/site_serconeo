@@ -376,7 +376,7 @@
           <iframe 
             src="descricoes.php" 
             class="embed-responsive-item" 
-            style="border:0; width:100%; height:800px;" 
+            style="border:0; width:100%; height:80%;" 
             allowfullscreen>
           </iframe>
         </div>
