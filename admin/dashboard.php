@@ -1,3 +1,7 @@
+<?php
+  include 'objetos.php';
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
