@@ -41,7 +41,7 @@
         public function getSiteInfo()
         {
             // Consulta o texto para a seção "feautes"
-            try {
+           
                 // Verifica se a conexão já foi estabelecida
                 if (!$this->pdo) {
                     $this->conexao();
@@ -66,10 +66,4 @@
             
             //$this->ARRAY_SITEINFO = $this->stmtToArray($stmt);            
         }
-
-        
-        
-        
     }
-    
-    ?>
