@@ -26,9 +26,12 @@ class LoginSystem extends SITE_ADMIN
                 $_SESSION['user_id'] = $user['USA_DCEMAIL']; // Armazena o ID na sessão
                 header("Location: dashboard.php"); // Redireciona após login bem-sucedido
                 exit();
-            } else {
-                echo "Usuário o senha incorretos."; 
-            }
+            } else 
+                {
+                    $_SESSION = [];
+                    session_destroy();
+                    echo "Usuário o senha incorretos."; 
+                }
         } catch (PDOException $e) {  
             echo "Erro: " . $e->getMessage();
         } 
