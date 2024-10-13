@@ -24,7 +24,7 @@
     <![endif]-->
   </head>
   <body class="skin-blue">
-    <div class="wrapper">
+   
       
      
 
@@ -33,7 +33,7 @@
         <!-- Content Header (Page header) -->
       
 
-        <!-- Main content -->
+        <!-- Main content  INI -->
         
 
 
@@ -49,8 +49,8 @@
 
 
 
+      <!-- Main content FIM -->
 
-        
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
@@ -58,7 +58,7 @@
         </div>
         <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
       </footer>
-    </div><!-- ./wrapper -->
+   
 
     <!-- jQuery 2.1.3 -->
     <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
