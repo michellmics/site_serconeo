@@ -28,30 +28,7 @@
       
      
 
-      <!-- Right side column. Contains the navbar and content of the page -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
       
-
-        <!-- Main content  INI -->
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- Main content FIM -->
-
-      </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
           <b>Version</b> 2.0
