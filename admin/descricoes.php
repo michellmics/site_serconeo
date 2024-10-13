@@ -59,12 +59,12 @@
                   <!-- textarea -->
                   <div class="form-group">
                     <label>Título</label>
-                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo">teste</input>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="Título pré-definido da empresa"/>
                   </div>
                   <!-- textarea -->
                   <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="3" placeholder="Enter ..." name="descricao">teste</textarea>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..." name="descricao">teste descricao</textarea>
                   </div>
                   <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
