@@ -261,8 +261,8 @@
                   <li class="user-header">
                     <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
-                    <?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_NMNOME"]); ?> - Web Developer
-                      <small>Member since Nov. 2012</small>
+                    <?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_NMNOME"]); ?> - ADM
+                      <small><?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_DCEMAIL"]); ?></small>
                     </p>
                   </li>
                   <!-- Menu Body -->
