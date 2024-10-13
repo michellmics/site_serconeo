@@ -371,16 +371,16 @@
         <!-- Main content INI-->
         
 
-      <!-- textarea -->
-      <div class="form-group">
-      <label>Textarea</label>
-        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-      </div>
-      <div class="form-group">
-        <label>Textarea Disabled</label>
-        <textarea class="form-control" rows="3" placeholder="Enter ..." disabled></textarea>
-      </div>
-
+        <section class="content">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe 
+            src="descricoes.php" 
+            class="embed-responsive-item" 
+            style="border:0; width:100%; height:600px;" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
 
 
 
