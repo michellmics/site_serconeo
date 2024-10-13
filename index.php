@@ -144,9 +144,9 @@
 									<nav class="navigation">
 										<ul class="nav menu">
 											<li><a href="#slider">Inicio</a></li>
-											<li><a href="#why_choose">A empresa </a></li>
-											<li><a href="#services">Serviços </a></li>
-											<li><a href="#appointment">Contato </a></li>
+											<li><a href="#empresa">A empresa </a></li>
+											<li><a href="#servicos">Serviços </a></li>
+											<li><a href="#contato">Contato </a></li>
 										</ul>
 									</nav>
 								</div>
@@ -242,7 +242,7 @@
 										<span>Contatos</span>
 										<h4>E-mail e Telefones</h4>
 										<p>+55 (41) 3044-6383 +55 (41) 3044-6382</p> <p>E-mail: contato@serconeo.com.br</p>
-										<a href="#appointment">Leia Mais<i class="fa fa-long-arrow-right"></i></a>
+										<a href="#contato">Leia Mais<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -327,7 +327,7 @@
 		<!--/ End Feautes -->
 			
 		<!-- Start Why choose -->
-		<section id="why_choose" class="why-choose section" >
+		<section id="empresa" class="why-choose section" >
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -400,7 +400,7 @@
 							<p>Entre em contato conosco, teremos prazer em lhe atender.</p>
 							<div class="button">
 								<a href="#appointment" class="btn">Mensagem</a>
-								<a href="#services" class="btn second">Continue Lendo<i class="fa fa-long-arrow-right"></i></a>
+								<a href="#servicos" class="btn second">Continue Lendo<i class="fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -411,7 +411,7 @@
 		
 		
 		<!-- Start service -->
-		<section id="services" class="services section">
+		<section id="servicos" class="services section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -486,7 +486,7 @@
 		
 		
 		<!-- Start Appointment -->
-		<section id="appointment" class="appointment">
+		<section id="contato" class="appointment">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
