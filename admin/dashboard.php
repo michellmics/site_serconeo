@@ -1,6 +1,6 @@
 <?php
   include_once 'objetos.php';
-
+  session_start(); // Inicia a sessão
   echo "<pre>";
 print_r($_SERVER);
 echo "</pre>";
