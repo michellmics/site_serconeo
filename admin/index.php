@@ -24,17 +24,17 @@
   <body class="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="index2.html"><b><?php echo htmlspecialchars($siteAdmin->ARRAY_SITEINFO["SBI_DCDOMAINSITE"]); ?></b></a>
+        <a href="index.html"><b><?php echo htmlspecialchars($siteAdmin->ARRAY_SITEINFO["SBI_DCDOMAINSITE"]); ?></b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Acesso a área administrativa</p>
         <form action="login.php" method="post">
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" id="email" placeholder="E-mail"/>
+            <input type="text" class="form-control" id="email" placeholder="email"/>
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control" id="password" placeholder="Senha"/>
+            <input type="password" class="form-control" id="password" placeholder="password"/>
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
           <div class="row">
