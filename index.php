@@ -380,7 +380,7 @@
 									</div>
 								</div>
 								<!--/ End Video Animation -->
-								<a href="https://www.youtube.com/watch?v=h8hNte6Cej8" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+								<!--/ <a href="https://www.youtube.com/watch?v=h8hNte6Cej8" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>-->
 							</div>
 						</div>
 						<!-- End Choose Rights -->
