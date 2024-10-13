@@ -48,6 +48,8 @@
             <!-- left column -->
             <div class="col-md-6">
               <!-- general form elements -->
+
+              <!-- INI BLOCO 1 -->
               <div class="box box-primary">
                 <div class="box-header">
                   <h3 class="box-title">Quick Example</h3>
@@ -56,14 +58,44 @@
                 <form role="form">
                   <!-- textarea -->
                   <div class="form-group">
+                    <label>Text</label>
+                    <input type="text" class="form-control" placeholder="Enter ..."/>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form-group">
                       <label>Textarea</label>
                       <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                    </div>
+                  </div>
                   <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </div>
                 </form>
-              </div><!-- /.box -->
+              </div>
+              <!-- FIM BLOCO 1 -->
+
+              <!-- INI BLOCO 1 -->
+              <div class="box box-primary">
+                <div class="box-header">
+                  <h3 class="box-title">Quick Example</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form">
+                  <!-- textarea -->
+                  <div class="form-group">
+                    <label>Text</label>
+                    <input type="text" class="form-control" placeholder="Enter ..."/>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form-group">
+                      <label>Textarea</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                  </div>
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <!-- FIM BLOCO 1 -->
 
               <!-- Form Element sizes -->
               <div class="box box-success">
