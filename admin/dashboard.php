@@ -308,6 +308,7 @@
         <section class="sidebar">
           <!-- Sidebar user panel -->
           <div class="user-panel">
+            
             <div class="pull-left image">
               <img src=<? echo $imgProfile ?> class="img-circle" alt="User Image" />
             </div>
