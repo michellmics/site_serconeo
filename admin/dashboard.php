@@ -6,9 +6,11 @@
   $siteAdmin = new SITE_ADMIN();
   $result = $siteAdmin->getSiteInfo();
 
-  var_dump($siteAdmin->ARRAY_SITEINFO["SBI_DCSITE"]);
+  //var_dump($siteAdmin->ARRAY_SITEINFO["SBI_DCSITE"]);
+
+
  
-  die();
+  //die();
 
 
 ?>
@@ -49,7 +51,7 @@
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="index.html" class="logo"><b>Serconeo</b></a>
+        <a href="index.html" class="logo"><b>  <?php echo htmlspecialchars($siteAdmin->ARRAY_SITEINFO["SBI_DCSITE"]); ?></b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
