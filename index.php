@@ -13,7 +13,7 @@
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 		<!-- Title -->
-        <title>Serconeo Contabilidade - Seu parceiro contábil para decisões inteligentes.</title>
+        <title>Serconeo Contabilidade -Seu parceiro contábil para decisões inteligentes.</title>
 		
 		<!-- Favicon -->
         <link rel="icon" href="img/favicon.png">
