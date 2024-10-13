@@ -20,13 +20,6 @@
     <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
     <link href="plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body class="login-page">
     <div class="login-box">
@@ -35,7 +28,7 @@
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Acesso a área administrativa</p>
-        <form action="index2.html" method="post">
+        <form action="login.php" method="post">
           <div class="form-group has-feedback">
             <input type="text" class="form-control" placeholder="E-mail"/>
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -45,8 +38,7 @@
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
           <div class="row">
-            <div class="col-xs-8">    
-                                
+            <div class="col-xs-8">                 
             </div><!-- /.col -->
             <div class="col-xs-4">
               <button type="submit" class="btn btn-primary btn-block btn-flat">login</button>
