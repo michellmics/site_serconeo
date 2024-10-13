@@ -144,7 +144,7 @@
 									<nav class="navigation">
 										<ul class="nav menu">
 											<li><a href="#slider">Inicio</a></li>
-											<li><a href="#empresa">A empresa </a></li>
+											<li><a href="#empresa">Empresa </a></li>
 											<li><a href="#servicos">Serviços </a></li>
 											<li><a href="#contato">Contato </a></li>
 										</ul>
