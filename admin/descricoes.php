@@ -29,7 +29,7 @@
      
 
       <!-- Right side column. Contains the navbar and content of the page -->
-      <div class="content-wrapper" style="margin-left: 180px; background-color: white;">
+      <div class="content-wrapper" style="margin-left: 18px; background-color: white;">
         <!-- Content Header (Page header) -->
       
 
