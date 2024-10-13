@@ -24,7 +24,7 @@
         public function getSiteInfo()
         {
             // Consulta o texto para a seção "feautes"
-            /*
+           
             $sql = "SELECT SBI_DCSITE, 
                             SBI_DCDOMAINSITE, 
                             SBI_DTRENEW_REGISTER_DOMAIN,
@@ -33,7 +33,7 @@
             $stmt = $pdo->prepare($sql);
             $stmt->execute();
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
-            */
+            
             return "tese";
             
             //$this->ARRAY_SITEINFO = $this->stmtToArray($stmt);            
