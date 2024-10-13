@@ -1,31 +1,17 @@
 <?php
   include_once 'objetos.php';
-  /*
-  session_start(); // Inicia a sessão
-  echo "<pre>";
-  print_r($_SESSION);
-  echo "</pre>";
-  die();
-  */
   
-  session_start(); // Inicia a sessão
-  // Verifica se a sessão do usuário está ativa
+  session_start(); 
+  define('SESSION_TIMEOUT', 1800); // 30 minutos
   if (!isset($_SESSION['user_id'])) 
   {
     header("Location: index.php");
     exit();
   }
 
-
   $siteAdmin = new SITE_ADMIN();
-  $result = $siteAdmin->getSiteInfo();
-
-  //var_dump($siteAdmin->ARRAY_SITEINFO["SBI_DCSITE"]);
-
-
- 
-  //die();
-
+  $siteAdmin->getSiteInfo(); 
+  $siteAdmin->getUserInfo();
 
 ?>
 
@@ -267,14 +253,14 @@
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-                  <span class="hidden-xs">Alexander Pierce</span>
+                  <span class="hidden-xs"><?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_NMNOME"]); ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
                     <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
-                      Alexander Pierce - Web Developer
+                    <?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_NMNOME"]); ?> - Web Developer
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -315,7 +301,7 @@
               <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p>Alexander Pierce</p>
+              <p><?php echo htmlspecialchars($siteAdmin->ARRAY_USERINFO["USA_NMNOME"]); ?></p>
 
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>

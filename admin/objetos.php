@@ -8,6 +8,7 @@
         //declaração de variaveis 
         public $pdo;
         public $ARRAY_SITEINFO;
+        public $ARRAY_USERINFO;
 
 
         function conexao()
@@ -55,8 +56,26 @@
                 $this->ARRAY_SITEINFO = $stmt->fetch(PDO::FETCH_ASSOC);
             } catch (PDOException $e) {
                 return ["error" => $e->getMessage()];
-            }          
+            }       
         }
+
+        public function getUserInfo()
+        {          
+                // Verifica se a conexão já foi estabelecida
+                if(!$this->pdo){$this->conexao();}
+            
+            try{           
+                $sql = "SELECT USA_IDUSERADMIN,                                  
+                                USA_DCEMAIL, 
+                                USA_NMNOME
+                                FROM USA_USERADMIN";
+
+                $stmt = $this->pdo->prepare($sql);
+                $stmt->execute();
+                $this->ARRAY_USERINFO = $stmt->fetch(PDO::FETCH_ASSOC);
+            } catch (PDOException $e) {
+                return ["error" => $e->getMessage()];
+            }          
 
 
 
