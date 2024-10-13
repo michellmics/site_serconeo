@@ -46,7 +46,7 @@
         <section class="content2">
           <div class="row">
             <!-- left column -->
-            <div class="col-md-6">
+            <div class="col-md-6d">
               <!-- general form elements -->
               <div class="box box-primary">
                 <div class="box-header">
