@@ -13,7 +13,7 @@
   $siteAdmin = new SITE_ADMIN();
   $siteAdmin->getDescEmpresaInfo();
 
-
+  //salvar formularios
   if ($_SERVER['REQUEST_METHOD'] === 'POST') 
   {
     if (isset($_POST['salvar_empresa'])) //botao salvar empresa
@@ -33,11 +33,9 @@
           echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";   
         }
     }
-
-  
-
   }
 
+  die();
    
 
   
