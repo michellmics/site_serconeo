@@ -26,17 +26,15 @@
 
       if (isset($result['error'])) 
       {
-        echo "<div class='alert alert-danger'>" . $result['error'] . "</div>";
-        exit();
-        
+        echo "<div class='alert alert-danger'>" . $result['error'] . "</div>";      
       } 
       else 
         {
-          echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";
-          exit();       
+          echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";   
         }
     }
 
+    die();
 
   }
 
