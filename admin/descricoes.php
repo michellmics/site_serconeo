@@ -32,8 +32,8 @@
       else 
         {
           echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";
-          sleep(3);
-          echo "<script>window.location.reload();</script>";
+          
+          
         }
     }
 
