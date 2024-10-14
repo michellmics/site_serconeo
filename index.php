@@ -3,6 +3,7 @@
 
   $siteAdmin = new SITE_ADMIN();
   $descEmpresa_1 = $siteAdmin->getDescEmpresaInfo(1);
+  $descEmpresa_2 = $siteAdmin->getDescEmpresaInfo(2);
   
 ?>
 
@@ -352,9 +353,7 @@
 						<!-- Start Choose Left -->
 						<div class="choose-left">
 							<h3>A Serconeo</h3>
-							<p>A Serconeo Contabilidade sempre manten-se atualizada e atualizando seus clientes, o que é muito importante, o cliente atualizado também, em relação aos acontecimentos no "mundo contábil", vêm a cada dia sempre munida de profissionais que acompanham as evuloções, através de cursos, palestras, leitura, e muita troca de idéias com os bons profissionais, munida de boas revistas e livros fiscais para atender sempre e melhor, o empresário que busca o sucesso. Independentemente da contratação dos serviços da Serconeo Contabilidade, entre em contato conosco, para conhecer melhor o nosso trablho e os nossos serviços, ou até mesmo para uma troca de idéias, estaremos a disposição para quaisquer esclarecimentos.</p>
-							<p><b>Nossa Missão</b> é assegurar o fornecimento de serviços contábeis, com a qualidade necessária, mediante o domínio das leis e tecnologia, prosperando como empresa. </p>
-							<p><b>Nosso Objetivo</b> é fornecer informações aos clientes com agilidade e clareza; assegurar a correção das informações; investir em tecnologia; e qualificar profissionais por meio de treinamentos contínuos. </p>
+							<p><?php echo htmlspecialchars($descEmpresa_1["PAD_DCTITLE"]); ?></p>
 							<!--
 							<div class="row">
 								<div class="col-lg-6">
