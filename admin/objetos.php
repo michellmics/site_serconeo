@@ -113,7 +113,7 @@
                 $sql = "UPDATE PAD_PAGEDESCR 
                         SET PAD_DCTEXT = :PAD_DCTEXT, 
                             PAD_DCTITLE = :PAD_DCTITLE 
-                        WHERE PAD_IDPAGEDESCR = :PAD_IDPAGEDESCR AND AD_NMPAGE = :PAD_NMPAGE";
+                        WHERE PAD_IDPAGEDESCR = :PAD_IDPAGEDESCR AND PAD_NMPAGE = :PAD_NMPAGE";
 
                 $stmt = $this->pdo->prepare($sql);
             
