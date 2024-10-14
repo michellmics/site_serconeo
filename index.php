@@ -344,7 +344,7 @@
 						<div class="section-title">
 							<h2 style="text-transform: none;"><?php echo htmlspecialchars($descEmpresa_1["PAD_DCTITLE"]); ?></h2>
 							<img src="img/section-img.png" alt="#">
-							<p><?php echo htmlspecialchars($descEmpresa_1["PAD_DCTEXT"]); ?></p>
+							<p><?php echo $descEmpresa_1["PAD_DCTEXT"]; ?></p>
 						</div>
 					</div>
 				</div>
