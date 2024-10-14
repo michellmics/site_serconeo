@@ -81,7 +81,7 @@
             }          
         }
 
-        public function getDescEmpresaInfo($id)
+        public function getDescEmpresaInfo($page,$id)
         {          
                 // Verifica se a conexão já foi estabelecida
                 if(!$this->pdo){$this->conexao();}
@@ -92,7 +92,7 @@
                                 PAD_DCTITLE,
                                 PAD_NMPAGE
                                 FROM PAD_PAGEDESCR
-                                WHERE PAD_NMPAGE = 'EMPRESA' AND PAD_IDPAGEDESCR = $id";
+                                WHERE PAD_NMPAGE = '".$page."' AND PAD_IDPAGEDESCR = $id";
 
                 $stmt = $this->pdo->prepare($sql);
                 $stmt->execute();

@@ -2,8 +2,8 @@
   include_once 'admin/objetos.php';
 
   $siteAdmin = new SITE_ADMIN();
-  $descEmpresa_1 = $siteAdmin->getDescEmpresaInfo(1);
-  $descEmpresa_2 = $siteAdmin->getDescEmpresaInfo(2);
+  $descEmpresa_1 = $siteAdmin->getDescEmpresaInfo("EMPRESA",1);
+  $descEmpresa_2 = $siteAdmin->getDescEmpresaInfo("EMPRESA",2);
   
 ?>
 
