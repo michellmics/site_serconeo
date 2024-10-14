@@ -68,7 +68,7 @@
             $sql = "SELECT VEN_IDVARENV, VEN_PARAMETER, VEN_VALUE FROM VEN_VARENV ORDER BY VEN_IDVARENV ASC";
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
-            $result = $stmt->fetch(PDO::FETCH_ASSOC);  
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);  
             return $result;              
         }
 
