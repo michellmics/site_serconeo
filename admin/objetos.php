@@ -92,7 +92,7 @@
                                 PAD_DCTITLE,
                                 PAD_NMPAGE
                                 FROM PAD_PAGEDESCR
-                                WHERE PAD_NMPAGE = 'EMPRESA'";
+                                WHERE PAD_NMPAGE = 'EMPRESA' AND PAD_IDPAGEDESCR = '1'";
 
                 $stmt = $this->pdo->prepare($sql);
                 $stmt->execute();
