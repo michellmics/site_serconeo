@@ -119,12 +119,12 @@
                   <!-- textarea -->
                   <div class="form-group">
                     <label>Título</label>
-                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTITLE"]); ?>"/>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_1["PAD_DCTITLE"]); ?>"/>
                   </div>
                   <!-- textarea -->
                   <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTEXT"]); ?></textarea>
+                      <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($descEmpresa_1["PAD_DCTEXT"]); ?></textarea>
                   </div>
                   <div class="box-footer">
                     <button type="submit" name="salvar_empresa_1" class="btn btn-primary">Salvar</button>
