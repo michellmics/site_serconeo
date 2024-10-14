@@ -1,21 +1,22 @@
 <?php
   include_once 'admin/objetos.php';
 
-  $siteAdmin = new SITE_ADMIN();
-  $descEmpresa_1 = $siteAdmin->getDescInfo("EMPRESA",1);
-  $descEmpresa_2 = $siteAdmin->getDescInfo("EMPRESA",2);
+  	$siteAdmin = new SITE_ADMIN();
+  	$descEmpresa_1 = $siteAdmin->getDescInfo("EMPRESA",1);
+  	$descEmpresa_2 = $siteAdmin->getDescInfo("EMPRESA",2);
 
-  $descServicos_1 = $siteAdmin->getDescInfo("SERVICOS",1);
-  $descServicos_2 = $siteAdmin->getDescInfo("SERVICOS",2);
-  $descServicos_3 = $siteAdmin->getDescInfo("SERVICOS",3);
-  $descServicos_4 = $siteAdmin->getDescInfo("SERVICOS",4);
-  $descServicos_5 = $siteAdmin->getDescInfo("SERVICOS",5);
-  $descServicos_6 = $siteAdmin->getDescInfo("SERVICOS",6);
-  $descServicos_7 = $siteAdmin->getDescInfo("SERVICOS",7);
+  	$descServicos_1 = $siteAdmin->getDescInfo("SERVICOS",1);
+  	$descServicos_2 = $siteAdmin->getDescInfo("SERVICOS",2);
+  	$descServicos_3 = $siteAdmin->getDescInfo("SERVICOS",3);
+  	$descServicos_4 = $siteAdmin->getDescInfo("SERVICOS",4);
+  	$descServicos_5 = $siteAdmin->getDescInfo("SERVICOS",5);
+  	$descServicos_6 = $siteAdmin->getDescInfo("SERVICOS",6);
+  	$descServicos_7 = $siteAdmin->getDescInfo("SERVICOS",7);
 
-  $varEnvArray = $siteAdmin->getVarEnvInfo();
+  	$varEnvArray = $siteAdmin->getVarEnvInfo();
+	$endereco = $varEnvArray[0]["VEN_VALUE"];
 
-  var_dump($varEnvArray);
+  echo $endereco;
   die()
   
 ?>
