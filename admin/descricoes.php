@@ -11,14 +11,32 @@
   }
 */
   $siteAdmin = new SITE_ADMIN();
-  $siteAdmin->getDescEmpresaInfo();
+  $descEmpresa_1 = $siteAdmin->getDescEmpresaInfo(1);
 
   //salvar formularios
-    if (isset($_POST['salvar_empresa'])) //botao salvar empresa
+    if (isset($_POST['salvar_empresa_1'])) //botao salvar empresa_1
     {
       $titulo = $_POST['titulo'];      
       $descricao = $_POST['descricao']; 
       $id = 1; 
+
+      $result = $siteAdmin->updateDesc($titulo, $descricao, $id);
+
+      if (isset($result['error'])) 
+      {
+        echo "<div class='alert alert-danger'>" . $result['error'] . "</div>";      
+      } 
+      else 
+        {
+          echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";   
+        }
+    }
+
+    if (isset($_POST['salvar_empresa_2'])) //botao salvar empresa_1
+    {
+      $titulo = $_POST['titulo'];      
+      $descricao = $_POST['descricao']; 
+      $id = 2; 
 
       $result = $siteAdmin->updateDesc($titulo, $descricao, $id);
 
@@ -109,7 +127,7 @@
                       <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTEXT"]); ?></textarea>
                   </div>
                   <div class="box-footer">
-                    <button type="submit" name="salvar_empresa" class="btn btn-primary">Salvar</button>
+                    <button type="submit" name="salvar_empresa_1" class="btn btn-primary">Salvar</button>
                   </div>
                 </form>
               </div>
@@ -118,22 +136,22 @@
               <!-- INI BLOCO 2 -->
               <div class="box box-primary">
                 <div class="box-header">
-                  <h3 class="box-title">Quick Example</h3>
+                  <h3 class="box-title">A Empresa</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form">
+                <form role="form" method="POST" action="descricoes.php">
                   <!-- textarea -->
                   <div class="form-group">
-                    <label>Text</label>
-                    <input type="text" class="form-control" placeholder="Enter ..."/>
+                    <label>Título</label>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_1["PAD_DCTITLE"]); ?>"/>
                   </div>
                   <!-- textarea -->
                   <div class="form-group">
-                      <label>Textarea</label>
-                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                      <label>Descrição</label>
+                      <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($descEmpresa_1["PAD_DCTEXT"]); ?></textarea>
                   </div>
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="salvar_empresa_2" class="btn btn-primary">Salvar</button>
                   </div>
                 </form>
               </div>

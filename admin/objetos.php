@@ -81,7 +81,7 @@
             }          
         }
 
-        public function getDescEmpresaInfo()
+        public function getDescEmpresaInfo($id)
         {          
                 // Verifica se a conexão já foi estabelecida
                 if(!$this->pdo){$this->conexao();}
@@ -92,11 +92,11 @@
                                 PAD_DCTITLE,
                                 PAD_NMPAGE
                                 FROM PAD_PAGEDESCR
-                                WHERE PAD_NMPAGE = 'EMPRESA' AND PAD_IDPAGEDESCR = '1'";
+                                WHERE PAD_NMPAGE = 'EMPRESA' AND PAD_IDPAGEDESCR = $id";
 
                 $stmt = $this->pdo->prepare($sql);
                 $stmt->execute();
-                $this->ARRAY_DESCEMPRESAINFO = $stmt->fetch(PDO::FETCH_ASSOC);
+                return $stmt->fetch(PDO::FETCH_ASSOC);
             } catch (PDOException $e) {
                 return ["error" => $e->getMessage()];
             }          
