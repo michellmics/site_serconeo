@@ -105,8 +105,8 @@
                 <form role="form" method="POST" action="descricoes.php">
 
                   <!-- CAMPOS COMO VARIAVEIS -->
-                  <input type="text" type="hidden" name="page" value="EMPRESA"/>
-                  <input type="text" type="hidden" name="id" value="1"/>
+                  <input type="hidden" name="page" value="EMPRESA"/>
+                  <input type="hidden" name="id" value="1"/>
                   <!-- CAMPOS COMO VARIAVEIS -->
                   
                   <!-- textarea -->
@@ -135,8 +135,8 @@
                 <form role="form" method="POST" action="descricoes.php">
 
                   <!-- CAMPOS COMO VARIAVEIS -->
-                  <input type="text" type="hidden" name="page" value="EMPRESA"/>
-                  <input type="text" type="hidden" name="id" value="2"/>
+                  <input type="hidden" name="page" value="EMPRESA"/>
+                  <input type="hidden" name="id" value="2"/>
                   <!-- CAMPOS COMO VARIAVEIS -->
 
                   <!-- textarea -->
@@ -293,8 +293,8 @@
                 <form role="form" method="POST" action="descricoes.php">
 
                   <!-- CAMPOS COMO VARIAVEIS -->
-                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
-                  <input type="text" type="hidden" name="id" value="1"/>
+                  <input type="hidden" name="page" value="SERVICOS"/>
+                  <input type="hidden" name="id" value="1"/>
                   <!-- CAMPOS COMO VARIAVEIS -->
 
                   <!-- textarea -->
@@ -323,8 +323,8 @@
                 <form role="form" method="POST" action="descricoes.php">
 
                   <!-- CAMPOS COMO VARIAVEIS -->
-                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
-                  <input type="text" type="hidden" name="id" value="2"/>
+                  <input type="hidden" name="page" value="SERVICOS"/>
+                  <input type="hidden" name="id" value="2"/>
                   <!-- CAMPOS COMO VARIAVEIS -->
 
                   <!-- textarea -->
@@ -353,8 +353,8 @@
                 <form role="form" method="POST" action="descricoes.php">
 
                   <!-- CAMPOS COMO VARIAVEIS -->
-                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
-                  <input type="text" type="hidden" name="id" value="3"/>
+                  <input type="hidden" name="page" value="SERVICOS"/>
+                  <input type="hidden" name="id" value="3"/>
                   <!-- CAMPOS COMO VARIAVEIS -->
 
                   <!-- textarea -->
@@ -383,8 +383,8 @@
                 <form role="form" method="POST" action="descricoes.php">
 
                   <!-- CAMPOS COMO VARIAVEIS -->
-                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
-                  <input type="text" type="hidden" name="id" value="4"/>
+                  <input type="hidden" name="page" value="SERVICOS"/>
+                  <input type="hidden" name="id" value="4"/>
                   <!-- CAMPOS COMO VARIAVEIS -->
 
                   <!-- textarea -->
@@ -413,8 +413,8 @@
                 <form role="form" method="POST" action="descricoes.php">
 
                   <!-- CAMPOS COMO VARIAVEIS -->
-                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
-                  <input type="text" type="hidden" name="id" value="5"/>
+                  <input type="hidden" name="page" value="SERVICOS"/>
+                  <input type="hidden" name="id" value="5"/>
                   <!-- CAMPOS COMO VARIAVEIS -->
 
                   <!-- textarea -->
@@ -443,8 +443,8 @@
                 <form role="form" method="POST" action="descricoes.php">
 
                   <!-- CAMPOS COMO VARIAVEIS -->
-                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
-                  <input type="text" type="hidden" name="id" value="6"/>
+                  <input type="hidden" name="page" value="SERVICOS"/>
+                  <input type="hidden" name="id" value="6"/>
                   <!-- CAMPOS COMO VARIAVEIS -->
 
                   <!-- textarea -->
@@ -473,8 +473,8 @@
                 <form role="form" method="POST" action="descricoes.php">
 
                   <!-- CAMPOS COMO VARIAVEIS -->
-                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
-                  <input type="text" type="hidden" name="id" value="7"/>
+                  <input type="hidden" name="page" value="SERVICOS"/>
+                  <input type="hidden" name="id" value="7"/>
                   <!-- CAMPOS COMO VARIAVEIS -->
 
                   <!-- textarea -->
