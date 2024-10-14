@@ -27,13 +27,13 @@
       if (isset($result['error'])) 
       {
         echo "<div class='alert alert-danger'>" . $result['error'] . "</div>";
+        exit();
         
       } 
       else 
         {
           echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";
-          
-          
+          exit();       
         }
     }
 
