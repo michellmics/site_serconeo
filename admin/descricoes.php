@@ -27,12 +27,17 @@
       if (isset($result['error'])) 
       {
         echo "<div class='alert alert-danger'>" . $result['error'] . "</div>";
+        
       } 
       else 
         {
-          echo "<div class='alert alert-success'>" . $result['success'] . "</div>";
+          echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";
+          sleep(3);
+          echo "<script>window.location.reload();</script>";
         }
     }
+
+
   }
 
    
