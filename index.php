@@ -434,7 +434,7 @@
 						<div class="section-title">
 							<h2 style="text-transform: none;"><?php echo $descServicos_1["PAD_DCTITLE"]; ?></h2>
 							<img src="img/section-img.png" alt="#">
-							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>
+							<p><?php echo $descServicos_2["PAD_DCTEXT"]; ?></p>
 						</div>
 					</div>
 				</div>
@@ -444,7 +444,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-building"></i>
 							<h4><a href="service-details.html"><?php echo $descServicos_2["PAD_DCTITLE"]; ?></a></h4>
-							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
+							<p><?php echo $descServicos_2["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -453,7 +453,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-prescription"></i>
 							<h4><a href="service-details.html"><?php echo $descServicos_3["PAD_DCTITLE"]; ?></a></h4>
-							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
+							<p><?php echo $descServicos_3["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -462,7 +462,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-businessman"></i>
 							<h4><a href="service-details.html"><?php echo $descServicos_4["PAD_DCTITLE"]; ?></a></h4>
-							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
+							<p><?php echo $descServicos_4["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -471,7 +471,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-chart-line"></i>
 							<h4><a href="service-details.html"><?php echo $descServicos_5["PAD_DCTITLE"]; ?></a></h4>
-							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
+							<p><?php echo $descServicos_5["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -480,7 +480,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-money"></i>
 							<h4><a href="service-details.html"><?php echo $descServicos_6["PAD_DCTITLE"]; ?></a></h4>
-							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
+							<p><?php echo $descServicos_6["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -489,7 +489,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-calculator"></i>
 							<h4><a href="service-details.html"><?php echo $descServicos_7["PAD_DCTITLE"]; ?></a></h4>
-							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
+							<p><?php echo $descServicos_7["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
