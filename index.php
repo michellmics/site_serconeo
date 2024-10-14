@@ -352,7 +352,7 @@
 					<div class="col-lg-6 col-12">
 						<!-- Start Choose Left -->
 						<div class="choose-left">
-							<h3>A Serconeo</h3>
+							<h3><?php echo htmlspecialchars($descEmpresa_2["PAD_DCTITLE"]); ?></h3>
 							<p><?php echo htmlspecialchars($descEmpresa_2["PAD_DCTEXT"]); ?></p>
 							<!--
 							<div class="row">
