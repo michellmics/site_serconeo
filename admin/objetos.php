@@ -121,7 +121,7 @@
                 $stmt->bindParam(':PAD_DCTEXT', $PAD_DCTEXT, PDO::PARAM_STR);
                 $stmt->bindParam(':PAD_DCTITLE', $PAD_DCTITLE, PDO::PARAM_STR);
                 $stmt->bindParam(':PAD_IDPAGEDESCR', $PAD_IDPAGEDESCR, PDO::PARAM_INT);
-                $stmt->bindParam(':PAD_NMPAGE', $PAD_NMPAGE, PDO::PARAM_INT);
+                $stmt->bindParam(':PAD_NMPAGE', $PAD_NMPAGE, PDO::PARAM_STR);
             
                 $stmt->execute();
             

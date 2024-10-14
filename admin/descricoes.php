@@ -38,8 +38,7 @@
       } 
       else 
         {
-         // echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";   
-         echo $page;   
+          echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";      
         }
     }
 
