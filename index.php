@@ -1,5 +1,5 @@
 <?php
-  include_once 'objetos.php';
+  include_once 'admin/objetos.php';
 
   $siteAdmin = new SITE_ADMIN();
   $siteAdmin->getDescEmpresaInfo();
