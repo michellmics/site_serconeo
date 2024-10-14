@@ -15,10 +15,10 @@
 
   	$varEnvArray = $siteAdmin->getVarEnvInfo();
 	$endereco = $varEnvArray[0]["VEN_VALUE"];
-
-  echo $endereco;
-  die()
-  
+	$email = $varEnvArray[1]["VEN_VALUE"];
+	$telefonePri = $varEnvArray[2]["VEN_VALUE"];
+	$telefoneSec = $varEnvArray[3]["VEN_VALUE"];
+	$nomeEmpresaFull = $varEnvArray[4]["VEN_VALUE"]; 
 ?>
 
 
@@ -37,7 +37,7 @@
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 		<!-- Title -->
-        <title>Serconeo Contabilidade - Seu parceiro contábil para decisões inteligentes.</title>
+        <title><?php echo $nomeEmpresaFull; ?> - Seu parceiro contábil para decisões inteligentes.</title>
 		
 		<!-- Favicon -->
         <link rel="icon" href="img/favicon.png">
@@ -128,7 +128,7 @@
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
 							<ul class="top-link">
-								<li><a href="https://maps.app.goo.gl/1fPQa7EzagpK3gs39" target="_blank">Rua Brigadeiro Franco,  4171, Rebouças - Curitiba - PR</a></li>
+								<li><a href="https://maps.app.goo.gl/1fPQa7EzagpK3gs39" target="_blank"><?php echo $endereco; ?></a></li>
 								<!-- <li><a href="#">Serviços</a></li> -->
 								<!-- <li><a href="#">Contact</a></li> -->
 								<!-- <li><a href="#">FAQ</a></li> -->
@@ -138,8 +138,8 @@
 						<div class="col-lg-6 col-md-7 col-12">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+55 (41) 3044-6382</li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:contato@serconeo.com.br">contato@serconeo.com.br</a></li>
+								<li><i class="fa fa-phone"></i><?php echo $telefonePri; ?></li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
 							</ul>
 							<!-- End Top Contact -->
 						</div>
@@ -265,7 +265,7 @@
 									<div class="single-content">
 										<span>Contatos</span>
 										<h4>E-mail e Telefones</h4>
-										<p>+55 (41) 3044-6383 +55 (41) 3044-6382</p> <p>E-mail: contato@serconeo.com.br</p>
+										<p><?php echo $telefonePri; ?> <?php echo $telefoneSec; ?></p> <p>E-mail: <?php echo $email; ?></p>
 										<a href="#contato">Leia Mais<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
@@ -631,7 +631,7 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-12">
 							<div class="copyright-content">
-								<p>© Copyright <?php echo date('Y'); ?>  |  Todos os direitos reservados por <a href="#slider">Serconeo Contabilidade</a> </p>
+								<p>© Copyright <?php echo date('Y'); ?>  |  Todos os direitos reservados por <a href="#slider"><?php echo $nomeEmpresaFull; ?></a> </p>
 							</div>
 						</div>
 					</div>

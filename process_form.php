@@ -1,4 +1,13 @@
 <?php
+    include_once 'admin/objetos.php';
+
+    $varEnvArray = $siteAdmin->getVarEnvInfo();
+	$endereco = $varEnvArray[0]["VEN_VALUE"];
+	$email = $varEnvArray[1]["VEN_VALUE"];
+	$telefonePri = $varEnvArray[2]["VEN_VALUE"];
+	$telefoneSec = $varEnvArray[3]["VEN_VALUE"];
+	$nomeEmpresaFull = $varEnvArray[4]["VEN_VALUE"]; 
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Sua chave secreta
     $secretKey = "6LcZHF4qAAAAAB8x_VRiQoivWpb5kzz_SOy8EwIT"; // Substitua pela sua chave secreta
@@ -23,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $message = htmlspecialchars($_POST['message']);
 
             // Configurações do e-mail
-            $to = "contato@serconeo.com.br"; 
+            $to = $email; 
             $subject = "ATENÇÃO: Contato pelo site da Serconeo";
             $body = "Nome: $name\n";
             $body .= "E-mail: $email\n";
