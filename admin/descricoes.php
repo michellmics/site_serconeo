@@ -1,3 +1,24 @@
+<?php
+  include_once 'objetos.php';
+  /*
+  session_start(); 
+  define('SESSION_TIMEOUT', 1800); // 30 minutos
+ 
+  if (!isset($_SESSION['user_id'])) 
+  {
+    header("Location: index.php");
+    exit();
+  }
+*/
+  $siteAdmin = new SITE_ADMIN();
+  $siteAdmin->getDescEmpresaInfo();
+
+  
+
+  
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -59,15 +80,15 @@
                   <!-- textarea -->
                   <div class="form-group">
                     <label>Título</label>
-                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="Título pré-definido da empresa"/>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value=<?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTITLE"]); ?>/>
                   </div>
                   <!-- textarea -->
                   <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="3" placeholder="Enter ..." name="descricao">teste descricao</textarea>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTEXT"]); ?></textarea>
                   </div>
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
                   </div>
                 </form>
               </div>
