@@ -1,3 +1,12 @@
+<?php
+  include_once 'objetos.php';
+
+  $siteAdmin = new SITE_ADMIN();
+  $siteAdmin->getDescEmpresaInfo();
+  
+?>
+
+
 <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
@@ -332,9 +341,9 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2 style="text-transform: none;">A empresa</h2>
+							<h2 style="text-transform: none;"><?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTITLE"]); ?></h2>
 							<img src="img/section-img.png" alt="#">
-							<p>Nossa política de qualidade é prestar serviços aos nossos clientes, visando satisfazer e superar suas necessidades com qualidade e confiabilidade.</p>
+							<p><?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTEXT"]); ?></p>
 						</div>
 					</div>
 				</div>
