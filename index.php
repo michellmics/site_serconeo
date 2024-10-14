@@ -434,7 +434,7 @@
 						<div class="section-title">
 							<h2 style="text-transform: none;"><?php echo $descServicos_1["PAD_DCTITLE"]; ?></h2>
 							<img src="img/section-img.png" alt="#">
-							<p><?php echo $descServicos_2["PAD_DCTEXT"]; ?></p>
+							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>
 						</div>
 					</div>
 				</div>
