@@ -14,8 +14,6 @@
   $siteAdmin->getDescEmpresaInfo();
 
   //salvar formularios
-  if ($_SERVER['REQUEST_METHOD'] === 'POST') 
-  {
     if (isset($_POST['salvar_empresa'])) //botao salvar empresa
     {
       $titulo = $_POST['titulo'];      
@@ -33,9 +31,9 @@
           echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";   
         }
     }
-  }
 
-  die();
+
+ 
    
 
   
