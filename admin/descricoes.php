@@ -12,6 +12,7 @@
 */
   $siteAdmin = new SITE_ADMIN();
   $descEmpresa_1 = $siteAdmin->getDescEmpresaInfo(1);
+  $descEmpresa_2 = $siteAdmin->getDescEmpresaInfo(2);
 
   //salvar formularios
     if (isset($_POST['salvar_empresa_1'])) //botao salvar empresa_1
@@ -112,7 +113,7 @@
               <!-- INI BLOCO 1 -->
               <div class="box box-primary">
                 <div class="box-header">
-                  <h3 class="box-title">A Empresa</h3>
+                  <h3 class="box-title">Empresa</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 <form role="form" method="POST" action="descricoes.php">
@@ -136,19 +137,19 @@
               <!-- INI BLOCO 2 -->
               <div class="box box-primary">
                 <div class="box-header">
-                  <h3 class="box-title">A Empresa</h3>
+                  <h3 class="box-title">Empresa</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 <form role="form" method="POST" action="descricoes.php">
                   <!-- textarea -->
                   <div class="form-group">
                     <label>Título</label>
-                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_1["PAD_DCTITLE"]); ?>"/>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_2["PAD_DCTITLE"]); ?>"/>
                   </div>
                   <!-- textarea -->
                   <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($descEmpresa_1["PAD_DCTEXT"]); ?></textarea>
+                      <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($descEmpresa_2["PAD_DCTEXT"]); ?></textarea>
                   </div>
                   <div class="box-footer">
                     <button type="submit" name="salvar_empresa_2" class="btn btn-primary">Salvar</button>
