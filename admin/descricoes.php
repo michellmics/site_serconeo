@@ -149,7 +149,7 @@
                   <!-- textarea -->
                   <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($descEmpresa_2["PAD_DCTEXT"]); ?></textarea>
+                      <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo $descEmpresa_2["PAD_DCTEXT"]; ?></textarea>
                   </div>
                   <div class="box-footer">
                     <button type="submit" name="salvar_empresa_2" class="btn btn-primary">Salvar</button>
