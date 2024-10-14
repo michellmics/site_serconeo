@@ -2,8 +2,16 @@
   include_once 'admin/objetos.php';
 
   $siteAdmin = new SITE_ADMIN();
-  $descEmpresa_1 = $siteAdmin->getDescEmpresaInfo("EMPRESA",1);
-  $descEmpresa_2 = $siteAdmin->getDescEmpresaInfo("EMPRESA",2);
+  $descEmpresa_1 = $siteAdmin->getDescInfo("EMPRESA",1);
+  $descEmpresa_2 = $siteAdmin->getDescInfo("EMPRESA",2);
+
+  $descServicos_1 = $siteAdmin->getDescInfo("SERVICOS",1);
+  $descServicos_2 = $siteAdmin->getDescInfo("SERVICOS",2);
+  $descServicos_3 = $siteAdmin->getDescInfo("SERVICOS",3);
+  $descServicos_4 = $siteAdmin->getDescInfo("SERVICOS",4);
+  $descServicos_5 = $siteAdmin->getDescInfo("SERVICOS",5);
+  $descServicos_6 = $siteAdmin->getDescInfo("SERVICOS",6);
+  $descServicos_7 = $siteAdmin->getDescInfo("SERVICOS",7);
   
 ?>
 
@@ -424,9 +432,9 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2 style="text-transform: none;">Disponibilizamos uma ampla gama de serviços para atender às suas necessidades</h2>
+							<h2 style="text-transform: none;"><?php echo $descServicos_1["PAD_DCTITLE"]; ?></h2>
 							<img src="img/section-img.png" alt="#">
-							<p>Incluindo regularização de empresas, assessoria empresarial, gestão de impostos e terceirização da folha de pagamento, sempre com foco em eficiência e conformidade.</p>
+							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>
 						</div>
 					</div>
 				</div>
@@ -435,8 +443,8 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-building"></i>
-							<h4><a href="service-details.html">Abertura e Encerramento</a></h4>
-							<p>Facilitamos o processo de abertura e encerramento da sua empresa com consultoria especializada e suporte em cada etapa. </p>	
+							<h4><a href="service-details.html"><?php echo $descServicos_2["PAD_DCTITLE"]; ?></a></h4>
+							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -444,8 +452,8 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-prescription"></i>
-							<h4><a href="service-details.html">Legalização</a></h4>
-							<p>Regularização da situação de empresas, associações sem fins lucrativos e igrejas, garantindo conformidade legal e tranquilidade para suas atividades. </p>	
+							<h4><a href="service-details.html"><?php echo $descServicos_3["PAD_DCTITLE"]; ?></a></h4>
+							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -453,8 +461,8 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-businessman"></i>
-							<h4><a href="service-details.html">Assessoria</a></h4>
-							<p>Assessoria empresarial completa, com suporte especializado nos departamentos fiscal, de pessoal e contábil. </p>	
+							<h4><a href="service-details.html"><?php echo $descServicos_4["PAD_DCTITLE"]; ?></a></h4>
+							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -462,8 +470,8 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-chart-line"></i>
-							<h4><a href="service-details.html">Imposto de Renda</a></h4>
-							<p>Serviços de Imposto de Renda para pessoas físicas e jurídicas, incluindo a elaboração de declarações de espólio. </p>	
+							<h4><a href="service-details.html"><?php echo $descServicos_5["PAD_DCTITLE"]; ?></a></h4>
+							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -471,8 +479,8 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-money"></i>
-							<h4><a href="service-details.html">Folha de Pagamento</a></h4>
-							<p>Terceirização da folha de pagamento, proporcionando mais eficiência e redução de custos na gestão de recursos humanos da sua empresa. </p>	
+							<h4><a href="service-details.html"><?php echo $descServicos_6["PAD_DCTITLE"]; ?></a></h4>
+							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -480,8 +488,8 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-calculator"></i>
-							<h4><a href="service-details.html">Tributos & Escrita Fiscal</a></h4>
-							<p>Controle e execução de todas as obrigações fiscais. Administração de tributos e suas obrigações acessórias. </p>	
+							<h4><a href="service-details.html"><?php echo $descServicos_7["PAD_DCTITLE"]; ?></a></h4>
+							<p><?php echo $descServicos_1["PAD_DCTEXT"]; ?></p>	
 						</div>
 						<!-- End Single Service -->
 					</div>

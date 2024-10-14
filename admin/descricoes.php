@@ -11,17 +11,26 @@
   }
 */
   $siteAdmin = new SITE_ADMIN();
-  $descEmpresa_1 = $siteAdmin->getDescEmpresaInfo("EMPRESA",1);
-  $descEmpresa_2 = $siteAdmin->getDescEmpresaInfo("EMPRESA",2);
+  $descEmpresa_1 = $siteAdmin->getDescInfo("EMPRESA",1);
+  $descEmpresa_2 = $siteAdmin->getDescInfo("EMPRESA",2);
 
-  //salvar formularios
-    if (isset($_POST['salvar_empresa_1'])) //botao salvar empresa_1
+  $descServicos_1 = $siteAdmin->getDescInfo("SERVICOS",1);
+  $descServicos_2 = $siteAdmin->getDescInfo("SERVICOS",2);
+  $descServicos_3 = $siteAdmin->getDescInfo("SERVICOS",3);
+  $descServicos_4 = $siteAdmin->getDescInfo("SERVICOS",4);
+  $descServicos_5 = $siteAdmin->getDescInfo("SERVICOS",5);
+  $descServicos_6 = $siteAdmin->getDescInfo("SERVICOS",6);
+  $descServicos_7 = $siteAdmin->getDescInfo("SERVICOS",7);
+
+    //salvar formularios
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') //botao salvar empresa_1
     {
       $titulo = $_POST['titulo'];      
       $descricao = $_POST['descricao']; 
-      $id = 1; 
+      $id = $_POST['id'];
+      $page = $_POST['page'];
 
-      $result = $siteAdmin->updateDesc($titulo, $descricao, $id);
+      $result = $siteAdmin->updateDesc($titulo, $descricao, $id, $page);
 
       if (isset($result['error'])) 
       {
@@ -33,47 +42,6 @@
         }
     }
 
-    if (isset($_POST['salvar_empresa_2'])) //botao salvar empresa_1
-    {
-      $titulo = $_POST['titulo'];      
-      $descricao = $_POST['descricao']; 
-      $id = 2; 
-
-      $result = $siteAdmin->updateDesc($titulo, $descricao, $id);
-
-      if (isset($result['error'])) 
-      {
-        echo "<div class='alert alert-danger'>" . $result['error'] . "</div>";      
-      } 
-      else 
-        {
-          echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";   
-        }
-    }
-
-    if (isset($_POST['salvar_servicos_1'])) //botao salvar empresa_1
-    {
-      $titulo = $_POST['titulo'];      
-      $descricao = $_POST['descricao']; 
-      $id = 1; 
-
-      $result = $siteAdmin->updateDesc($titulo, $descricao, $id);
-
-      if (isset($result['error'])) 
-      {
-        echo "<div class='alert alert-danger'>" . $result['error'] . "</div>";      
-      } 
-      else 
-        {
-          echo "<div class='alert alert-success'>" . $result['success'] . "</div> ";   
-        }
-    }
-
-
-    
-   
-
-  
 ?>
 
 
@@ -135,6 +103,12 @@
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 <form role="form" method="POST" action="descricoes.php">
+
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  <input type="text" type="hidden" name="page" value="EMPRESA"/>
+                  <input type="text" type="hidden" name="id" value="1"/>
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  
                   <!-- textarea -->
                   <div class="form-group">
                     <label>Título</label>
@@ -159,6 +133,12 @@
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 <form role="form" method="POST" action="descricoes.php">
+
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  <input type="text" type="hidden" name="page" value="EMPRESA"/>
+                  <input type="text" type="hidden" name="id" value="2"/>
+                  <!-- CAMPOS COMO VARIAVEIS -->
+
                   <!-- textarea -->
                   <div class="form-group">
                     <label>Título</label>
@@ -311,6 +291,12 @@
                 </div><!-- /.box-header -->
                 <!-- form start -->
                 <form role="form" method="POST" action="descricoes.php">
+
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
+                  <input type="text" type="hidden" name="id" value="1"/>
+                  <!-- CAMPOS COMO VARIAVEIS -->
+
                   <!-- textarea -->
                   <div class="form-group">
                     <label>Título</label>
@@ -331,26 +317,182 @@
               <!-- INI BLOCO 4 -->
               <div class="box box-primary">
                 <div class="box-header">
-                  <h3 class="box-title">Quick Example</h3>
+                  <h3 class="box-title">Serviços</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form">
+                <form role="form" method="POST" action="descricoes.php">
+
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
+                  <input type="text" type="hidden" name="id" value="2"/>
+                  <!-- CAMPOS COMO VARIAVEIS -->
+
                   <!-- textarea -->
                   <div class="form-group">
-                    <label>Text</label>
-                    <input type="text" class="form-control" placeholder="Enter ..."/>
+                    <label>Título</label>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_2["PAD_DCTITLE"]); ?>"/>
                   </div>
                   <!-- textarea -->
                   <div class="form-group">
-                      <label>Textarea</label>
-                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                      <label>Descrição</label>
+                      <textarea class="form-control" rows="10" placeholder="Enter ..." name="descricao"><?php echo $descEmpresa_2["PAD_DCTEXT"]; ?></textarea>
                   </div>
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="salvar_servicos_2" class="btn btn-primary">Salvar</button>
                   </div>
                 </form>
               </div>
               <!-- FIM BLOCO 4 -->
+
+              <!-- INI BLOCO 5 -->
+              <div class="box box-primary">
+                <div class="box-header">
+                  <h3 class="box-title">Serviços</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form" method="POST" action="descricoes.php">
+
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
+                  <input type="text" type="hidden" name="id" value="3"/>
+                  <!-- CAMPOS COMO VARIAVEIS -->
+
+                  <!-- textarea -->
+                  <div class="form-group">
+                    <label>Título</label>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_2["PAD_DCTITLE"]); ?>"/>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form-group">
+                      <label>Descrição</label>
+                      <textarea class="form-control" rows="10" placeholder="Enter ..." name="descricao"><?php echo $descEmpresa_2["PAD_DCTEXT"]; ?></textarea>
+                  </div>
+                  <div class="box-footer">
+                    <button type="submit" name="salvar_servicos_3" class="btn btn-primary">Salvar</button>
+                  </div>
+                </form>
+              </div>
+              <!-- FIM BLOCO 5 -->
+
+              <!-- INI BLOCO 6 -->
+              <div class="box box-primary">
+                <div class="box-header">
+                  <h3 class="box-title">Serviços</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form" method="POST" action="descricoes.php">
+
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
+                  <input type="text" type="hidden" name="id" value="4"/>
+                  <!-- CAMPOS COMO VARIAVEIS -->
+
+                  <!-- textarea -->
+                  <div class="form-group">
+                    <label>Título</label>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_2["PAD_DCTITLE"]); ?>"/>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form-group">
+                      <label>Descrição</label>
+                      <textarea class="form-control" rows="10" placeholder="Enter ..." name="descricao"><?php echo $descEmpresa_2["PAD_DCTEXT"]; ?></textarea>
+                  </div>
+                  <div class="box-footer">
+                    <button type="submit" name="salvar_servicos_4" class="btn btn-primary">Salvar</button>
+                  </div>
+                </form>
+              </div>
+              <!-- FIM BLOCO 6 -->
+
+              <!-- INI BLOCO 7 -->
+              <div class="box box-primary">
+                <div class="box-header">
+                  <h3 class="box-title">Serviços</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form" method="POST" action="descricoes.php">
+
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
+                  <input type="text" type="hidden" name="id" value="5"/>
+                  <!-- CAMPOS COMO VARIAVEIS -->
+
+                  <!-- textarea -->
+                  <div class="form-group">
+                    <label>Título</label>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_2["PAD_DCTITLE"]); ?>"/>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form-group">
+                      <label>Descrição</label>
+                      <textarea class="form-control" rows="10" placeholder="Enter ..." name="descricao"><?php echo $descEmpresa_2["PAD_DCTEXT"]; ?></textarea>
+                  </div>
+                  <div class="box-footer">
+                    <button type="submit" name="salvar_servicos_5" class="btn btn-primary">Salvar</button>
+                  </div>
+                </form>
+              </div>
+              <!-- FIM BLOCO 7 -->
+
+              <!-- INI BLOCO 8 -->
+              <div class="box box-primary">
+                <div class="box-header">
+                  <h3 class="box-title">Serviços</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form" method="POST" action="descricoes.php">
+
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
+                  <input type="text" type="hidden" name="id" value="6"/>
+                  <!-- CAMPOS COMO VARIAVEIS -->
+
+                  <!-- textarea -->
+                  <div class="form-group">
+                    <label>Título</label>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_2["PAD_DCTITLE"]); ?>"/>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form-group">
+                      <label>Descrição</label>
+                      <textarea class="form-control" rows="10" placeholder="Enter ..." name="descricao"><?php echo $descEmpresa_2["PAD_DCTEXT"]; ?></textarea>
+                  </div>
+                  <div class="box-footer">
+                    <button type="submit" name="salvar_servicos_6" class="btn btn-primary">Salvar</button>
+                  </div>
+                </form>
+              </div>
+              <!-- FIM BLOCO 8 -->
+
+              <!-- INI BLOCO 9 -->
+              <div class="box box-primary">
+                <div class="box-header">
+                  <h3 class="box-title">Serviços</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form" method="POST" action="descricoes.php">
+
+                  <!-- CAMPOS COMO VARIAVEIS -->
+                  <input type="text" type="hidden" name="page" value="SERVICOS"/>
+                  <input type="text" type="hidden" name="id" value="7"/>
+                  <!-- CAMPOS COMO VARIAVEIS -->
+
+                  <!-- textarea -->
+                  <div class="form-group">
+                    <label>Título</label>
+                    <input type="text" class="form-control" placeholder="Enter ..." name="titulo" value="<?php echo htmlspecialchars($descEmpresa_2["PAD_DCTITLE"]); ?>"/>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form-group">
+                      <label>Descrição</label>
+                      <textarea class="form-control" rows="10" placeholder="Enter ..." name="descricao"><?php echo $descEmpresa_2["PAD_DCTEXT"]; ?></textarea>
+                  </div>
+                  <div class="box-footer">
+                    <button type="submit" name="salvar_servicos_7" class="btn btn-primary">Salvar</button>
+                  </div>
+                </form>
+              </div>
+              <!-- FIM BLOCO 9 -->
                     
 
                     <!-- input states -->

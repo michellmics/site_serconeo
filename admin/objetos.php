@@ -81,7 +81,7 @@
             }          
         }
 
-        public function getDescEmpresaInfo($page,$id)
+        public function getDescInfo($page,$id)
         {          
                 // Verifica se a conexão já foi estabelecida
                 if(!$this->pdo){$this->conexao();}
@@ -102,7 +102,7 @@
             }          
         }
 
-        public function updateDesc($PAD_DCTITLE, $PAD_DCTEXT, $PAD_IDPAGEDESCR)
+        public function updateDesc($PAD_DCTITLE, $PAD_DCTEXT, $PAD_IDPAGEDESCR, $PAD_NMPAGE)
         {          
             // Verifica se a conexão já foi estabelecida
             if (!$this->pdo) {
@@ -113,7 +113,7 @@
                 $sql = "UPDATE PAD_PAGEDESCR 
                         SET PAD_DCTEXT = :PAD_DCTEXT, 
                             PAD_DCTITLE = :PAD_DCTITLE 
-                        WHERE PAD_IDPAGEDESCR = :PAD_IDPAGEDESCR";
+                        WHERE PAD_IDPAGEDESCR = :PAD_IDPAGEDESCR AND AD_NMPAGE = :PAD_NMPAGE";
 
                 $stmt = $this->pdo->prepare($sql);
             
@@ -121,6 +121,7 @@
                 $stmt->bindParam(':PAD_DCTEXT', $PAD_DCTEXT, PDO::PARAM_STR);
                 $stmt->bindParam(':PAD_DCTITLE', $PAD_DCTITLE, PDO::PARAM_STR);
                 $stmt->bindParam(':PAD_IDPAGEDESCR', $PAD_IDPAGEDESCR, PDO::PARAM_INT);
+                $stmt->bindParam(':PAD_NMPAGE', $PAD_NMPAGE, PDO::PARAM_INT);
             
                 $stmt->execute();
             
