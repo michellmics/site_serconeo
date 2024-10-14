@@ -13,6 +13,9 @@
   $siteAdmin = new SITE_ADMIN();
   $siteAdmin->getDescEmpresaInfo();
 
+  echo $siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTITLE"];
+  die();
+
   
 
   
@@ -85,7 +88,7 @@
                   <!-- textarea -->
                   <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="3" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTEXT"]); ?></textarea>
+                      <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTEXT"]); ?></textarea>
                   </div>
                   <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Salvar</button>
