@@ -12,6 +12,11 @@
   $descServicos_5 = $siteAdmin->getDescInfo("SERVICOS",5);
   $descServicos_6 = $siteAdmin->getDescInfo("SERVICOS",6);
   $descServicos_7 = $siteAdmin->getDescInfo("SERVICOS",7);
+
+  $varEnvArray = $siteAdmin->getVarEnvInfo("SERVICOS",6);
+
+  var_dump($varEnvArray);
+  die()
   
 ?>
 

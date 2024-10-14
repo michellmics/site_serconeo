@@ -61,6 +61,16 @@
             }       
         }
 
+        public function getVarEnvInfo()
+        {       
+            if(!$this->pdo){$this->conexao();}            
+                      
+            $sql = "SELECT VEN_PARAMETER, VEN_VALUE FROM VEN_VARENV ORDER BY VEN_IDVARENV ASC";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+            $this->ARRAY_SITEINFO = $stmt->fetch(PDO::FETCH_ASSOC);                
+        }
+
         public function getUserInfo()
         {          
                 // Verifica se a conexão já foi estabelecida
