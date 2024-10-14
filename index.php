@@ -353,7 +353,7 @@
 						<!-- Start Choose Left -->
 						<div class="choose-left">
 							<h3><?php echo htmlspecialchars($descEmpresa_2["PAD_DCTITLE"]); ?></h3>
-							<p><?php echo htmlspecialchars($descEmpresa_2["PAD_DCTEXT"]); ?></p>
+							<p><?php echo $descEmpresa_2["PAD_DCTEXT"]; ?></p>
 							<!--
 							<div class="row">
 								<div class="col-lg-6">
