@@ -1,12 +1,14 @@
 <?php
     include_once 'admin/objetos.php';
 
+    $siteAdmin = new SITE_ADMIN();
     $varEnvArray = $siteAdmin->getVarEnvInfo();
 	$endereco = $varEnvArray[0]["VEN_VALUE"];
 	$email = $varEnvArray[1]["VEN_VALUE"];
 	$telefonePri = $varEnvArray[2]["VEN_VALUE"];
 	$telefoneSec = $varEnvArray[3]["VEN_VALUE"];
 	$nomeEmpresaFull = $varEnvArray[4]["VEN_VALUE"]; 
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Sua chave secreta
