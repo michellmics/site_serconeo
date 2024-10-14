@@ -13,6 +13,28 @@
   $siteAdmin = new SITE_ADMIN();
   $siteAdmin->getDescEmpresaInfo();
 
+
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') 
+  {
+    if (isset($_POST['salvar_empresa'])) //botao salvar empresa
+    {
+      $titulo = $_POST['titulo'];      
+      $descricao = $_POST['descricao']; 
+      $id = 1; 
+
+      $result = $siteAdmin->updateDesc($titulo, $descricao, $id);
+
+      if (isset($result['error'])) 
+      {
+        echo "<div class='alert alert-danger'>" . $result['error'] . "</div>";
+      } 
+      else 
+        {
+          echo "<div class='alert alert-success'>" . $result['success'] . "</div>";
+        }
+    }
+  }
+
    
 
   
@@ -76,7 +98,7 @@
                   <h3 class="box-title">A Empresa</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form">
+                <form role="form" method="POST" action="descricoes.php">
                   <!-- textarea -->
                   <div class="form-group">
                     <label>Título</label>
@@ -88,7 +110,7 @@
                       <textarea class="form-control" rows="6" placeholder="Enter ..." name="descricao"><?php echo htmlspecialchars($siteAdmin->ARRAY_DESCEMPRESAINFO["PAD_DCTEXT"]); ?></textarea>
                   </div>
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="submit" name="salvar_empresa" class="btn btn-primary">Salvar</button>
                   </div>
                 </form>
               </div>

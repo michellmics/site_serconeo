@@ -102,6 +102,36 @@
             }          
         }
 
+        public function updateDesc($PAD_DCTITLE, $PAD_DCTEXT, $PAD_IDPAGEDESCR)
+        {          
+            // Verifica se a conexão já foi estabelecida
+            if (!$this->pdo) {
+                $this->conexao();
+            }
+        
+            try {
+                $sql = "UPDATE PAD_PAGEDESCR 
+                        SET PAD_DCTEXT = :PAD_DCTEXT, 
+                            PAD_DCTITLE = :PAD_DCTITLE 
+                        WHERE PAD_IDPAGEDESCR = :PAD_IDPAGEDESCR";
+
+                $stmt = $this->pdo->prepare($sql);
+            
+                // Liga os parâmetros aos valores
+                $stmt->bindParam(':PAD_DCTEXT', $PAD_DCTEXT, PDO::PARAM_STR);
+                $stmt->bindParam(':PAD_DCTITLE', $PAD_DCTITLE, PDO::PARAM_STR);
+                $stmt->bindParam(':PAD_IDPAGEDESCR', $PAD_IDPAGEDESCR, PDO::PARAM_INT);
+            
+                $stmt->execute();
+            
+                // Retorna uma mensagem de sucesso (opcional)
+                return ["success" => "Descrição atualizada com sucesso."];
+            } catch (PDOException $e) {
+                // Captura e retorna o erro
+                return ["error" => $e->getMessage()];
+            }
+        }
+
 
 
 
