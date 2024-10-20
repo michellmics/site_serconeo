@@ -641,7 +641,7 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-12">
 							<div class="copyright-content">
-								<p>© Copyright <?php echo date('Y'); ?>  |  Todos os direitos reservados por <a href="#slider"><?php echo $nomeEmpresaFull; ?></a>  - Desenvolvido por <a href="https://codemase.com.br" target="_blank"> CODEMAZE</a></p>
+								<p>© Copyright <?php echo date('Y'); ?>  |  Todos os direitos reservados <a href="#slider"><?php echo $nomeEmpresaFull; ?></a>  - Desenvolvido por <a href="https://codemase.com.br" target="_blank"> CODEMAZE</a></p>
 							</div>
 						</div>
 					</div>
